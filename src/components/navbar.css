@@ -1,0 +1,47 @@
+.navbar{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 32px;
+}
+
+.navbar-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    padding: 16px 24px;
+    background-color: #211F23;
+    border-radius: 32px;
+    border: 1px grey solid;
+}
+
+.navlink{
+    color: #B292FF;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    text-decoration: none;
+}
+
+.navlink-active {
+    color: white;
+}
+
+.navbar-social-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.social-media-icon{
+    width: 30px;
+    height: auto;
+}
+
+

@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.main-body{
+    width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #1E1E1E;
+}
+
+.landing-section{
+    height: 80vh;
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.landing-info-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.landing-info-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    gap: 32px;
+}
+
+.name-heading-1{
+    color: white;
+    font-size: 75px;
+    font-family: Raleway, sans-serif;
+    line-height: 100%;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.landing-info{
+    color: #6F6F6F;
+    font-family: Raleway, sans-serif;
+    font-size: 24px;
+    line-height: 200%;
+    margin: 0;
+    font-weight: 300;
+}
+
+.landing-info-span{
+    color: white;
+    font-weight: 600;
+}
+
+.landing-info-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 24px;
+}
+
+.cv-button{
+    padding: 16px 40px;
+    background-color: white;
+    border-radius: 32px;
+    color: #0C0C0D;
+    font-family: Nunito, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    border: 1px transparent solid;
+    transition: 350ms;
+    cursor: pointer;
+}
+
+.cv-button:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px white solid;
+}
+
+.button-1{
+    color: #B292FF;
+    padding: 16px 40px;
+    background-color: transparent;
+    font-family: Nunito, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    border-radius: 32px;
+    border: 1px transparent solid;
+    transition: 350ms;
+    cursor: pointer;
+}
+
+.button-1:hover{
+    border: 1px #B292FF solid;
+}
