@@ -7,7 +7,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    background-color: #1E1E1E;
+    background-color: #0C0C0D;
 }
 
 .landing-section{
@@ -100,4 +100,164 @@
 
 .button-1:hover{
     border: 1px #B292FF solid;
+}
+
+.landing-info-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.my-image{
+    width: 300px;
+    height: auto;
+}
+
+.landing-experience-section{
+    height: 40vh;
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.landing-experience-info{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    gap: 24px;
+    position: relative;
+}
+
+.linear-gradient-1{
+    position: absolute;
+    right: 0;
+    width: 100vh;
+    height: 100vh;
+    background: radial-gradient(circle at center,
+    rgba(128, 128, 128, 0.15) 0%,
+    rgba(128, 128, 128, 0.1) 20%,
+    rgba(128, 128, 128, 0.05) 40%,
+    rgba(128, 128, 128, 0) 60%,
+    rgba(0, 0, 0, 0) 100%);
+    filter: blur(50%);
+    border-radius: 50%;
+}
+
+.experience-text-1{
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #6F6F6F;
+    margin: 0;
+}
+
+.experience-heading-1{
+    font-family: Raleway, sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 100%;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.experience-text-2{
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #6F6F6F;
+    margin: 0;
+}
+
+.landing-experience-cards{
+    height: 100%;
+    width: 70%;
+    gap:40px;
+}
+
+
+.carousel-card-1{
+    height: 25vh;
+    background-color: #C3C99E;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 32px;
+    gap: 12px;
+}
+
+.card-image{
+    width: 50px;
+    height: auto;
+}
+
+.card-name{
+    color: #272727;
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 100%;
+    font-weight: 600;
+    margin: 0;
+}
+
+.carousel-card-2{
+    height: 25vh;
+    background-color: #7D9CA5;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 32px;
+    gap: 12px;
+}
+
+.carousel-card-3{
+    height: 25vh;
+    background-color: #C2C2C2;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 32px;
+    gap: 12px;
+}
+
+.carousel-card-4{
+    height: 25vh;
+    background-color: #C0E5D7;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 32px;
+    gap: 12px;
+}
+
+.carousel-card-5{
+    height: 25vh;
+    background-color: #000000;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 32px;
+    gap: 12px;
+}
+
+.carousel-card-6{
+    height: 25vh;
+    background-color: aliceblue;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 32px;
+    gap: 12px;
 }
