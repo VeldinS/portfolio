@@ -14,6 +14,11 @@
     );
     border-radius: 32px;
     height: fit-content;
+    transition: 350ms;
+}
+
+.gradient-wrapper:hover{
+    scale: 1.05;
 }
 
 .tech-card{

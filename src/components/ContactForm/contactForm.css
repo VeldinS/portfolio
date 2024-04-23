@@ -1,0 +1,104 @@
+.form-wrapper{
+    width: 100%;
+    padding: 0 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 128px;
+}
+
+.form-heading{
+    font-family: Raleway, sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.form{
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.form-input{
+    width: 70%;
+    background-color: transparent;
+    border: 0 transparent;
+    border-bottom: 1px solid grey;
+    transition:  0.3s ease;
+    color: white;
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    line-height: 100%;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-input::placeholder {
+    color: grey;
+    transition: 350ms;
+    width: 100%;
+    text-align: center;
+}
+
+.form-input:focus{
+    width: 100%;
+    outline: none;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.form-input:focus::placeholder {
+    color: transparent;
+}
+
+.form-textarea {
+    width: 70%;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+    transition: 0.3s ease;
+    color: white;
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    line-height: 100%;
+    resize: vertical;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-textarea:focus {
+    width: 100%;
+    outline: none;
+    border-bottom: 2px solid white !important;
+}
+
+.form-textarea::placeholder {
+    color: gray;
+    transition: color 0.3s ease;
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.form-textarea:focus::placeholder {
+    color: transparent;
+}

@@ -1,5 +1,8 @@
 import './home.css'
-import Navbar from "../../components/Navbar.tsx";
+
+import Navbar from "../../components/Navbar/Navbar.tsx";
+import TechCard from "../../components/TechCard/TechCard.tsx";
+import Footer from "../../components/Footer/Footer.tsx";
 
 import veldinImg from '../../assets/veldin.png';
 import javascriptImg from '../../assets/javascript.png';
@@ -12,17 +15,20 @@ import reactSVG from '../../assets/react.svg';
 import nextSVG from '../../assets/next.svg';
 import viteSVG from '../../assets/vite.svg';
 import astroSVG from '../../assets/astro.svg';
-import expressImg from '../../assets/express.png'
-import nodeImg from '../../assets/node.png'
-
-import TechCard from "../../components/TechCard.tsx";
+import expressImg from '../../assets/express.png';
+import nodeImg from '../../assets/node.png';
+import shopifyImg from '../../assets/shopify.jpg';
+import dockerImg from '../../assets/docker.jpg';
+import kubernetesImg from '../../assets/kubernetes.png';
+import githubImg from '../../assets/github-blue.svg'
+import ContactForm from "../../components/ContactForm/ContactForm.tsx";
 
 
 function Home() {
     return (
         <>
             <div className={"main-body"}>
-                <Navbar/>
+                <Navbar />
                 <section className={"landing-section"}>
                     <div className={"landing-info-grid"}>
                         <div className={"landing-info-wrapper"}>
@@ -99,13 +105,28 @@ function Home() {
                                   tech4={"Astro"} tech4Img={astroSVG}
                                   tech5={"Webflow"} tech5Img={webflowImg}
                         />
+                        <TechCard cardName={"Languages"}
+                                  tech1={"Javascript"} tech1Img={javascriptImg}
+                                  tech2={"Typescript"} tech2Img={typescriptImg}
+                        />
                         <TechCard cardName={"Back-end Technologies"}
                                   tech1={"Node.js"} tech1Img={nodeImg}
                                   tech2={"Express.js"} tech2Img={expressImg}
                                   tech3={"Mongo"} tech3Img={mongoImg}
                         />
+                        <TechCard cardName={"No-code Technologies"}
+                                  tech1={"Webflow"} tech1Img={webflowImg}
+                                  tech2={"Shopify"} tech2Img={shopifyImg}
+                        />
+                        <TechCard cardName={"Devops"}
+                                  tech1={"GitHub"} tech1Img={githubImg}
+                                  tech2={"Docker"} tech2Img={dockerImg}
+                                  tech3={"Kubernetes"} tech3Img={kubernetesImg}
+                        />
                     </div>
                 </section>
+                <ContactForm />
+                <Footer />
             </div>
         </>
     );
