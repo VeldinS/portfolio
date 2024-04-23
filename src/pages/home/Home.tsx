@@ -22,6 +22,7 @@ import dockerImg from '../../assets/docker.jpg';
 import kubernetesImg from '../../assets/kubernetes.png';
 import githubImg from '../../assets/github-blue.svg'
 import ContactForm from "../../components/ContactForm/ContactForm.tsx";
+import HomeInfo from "../../components/HomeInfo/HomeInfo.tsx";
 
 
 function Home() {
@@ -31,26 +32,10 @@ function Home() {
                 <Navbar />
                 <section className={"landing-section"}>
                     <div className={"landing-info-grid"}>
-                        <div className={"landing-info-wrapper"}>
-                            <h1 className={"name-heading-1"}>Hi, I’m Veldin</h1>
-                            <p className={"landing-info"}>During these
-                                <span className={"landing-info-span"}> 2 years </span>
-                                as
-                                <span className={"landing-info-span"}> Front-End Software Engineer. </span>
-                                 My role
-                                has extended beyond coding to effective communication with various departments, to
-                                define new features and spearheading the development of new apps.</p>
-                            <div className={"landing-info-buttons"}>
-                                <button className={"cv-button"}>
-                                    Download CV
-                                </button>
-                                <button className={"button-1"}>
-                                    See projects
-                                </button>
-                            </div>
-                        </div>
+                        <HomeInfo />
                         <div className={"landing-info-image"}>
-                            <img className={"my-image"} src={veldinImg} alt={"Image of Veldin"} />
+                            <div className={"linear-gradient-2"}></div>
+                            <img className={"my-image"} src={veldinImg} alt={"Image of Veldin"}/>
                         </div>
                     </div>
                 </section>
@@ -94,6 +79,7 @@ function Home() {
                     <a href={'/projects'}><h1 className={"landing-link-3"}>Projects</h1></a>
                 </section>
                 <section className={"landing-tech-section"}>
+                    <div className={"linear-gradient-2"}></div>
                     <h1 className={"landing-tech-heading"}>These are <br/>
                         the <span className={"landing-tech-heading-span"}> technologies </span> I’ve been using
                     </h1>
@@ -125,8 +111,8 @@ function Home() {
                         />
                     </div>
                 </section>
-                <ContactForm />
-                <Footer />
+                <ContactForm/>
+                <Footer/>
             </div>
         </>
     );

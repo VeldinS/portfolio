@@ -31,85 +31,8 @@ a{
     grid-template-rows: 1fr;
 }
 
-.landing-info-wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: flex-start;
-    gap: 32px;
-}
-
-.name-heading-1{
-    color: white;
-    font-size: 75px;
-    font-family: Raleway, sans-serif;
-    line-height: 100%;
-    letter-spacing: 2px;
-    font-weight: 400;
-    margin: 0;
-}
-
-.landing-info{
-    color: #6F6F6F;
-    font-family: Raleway, sans-serif;
-    font-size: 24px;
-    line-height: 200%;
-    margin: 0;
-    font-weight: 300;
-}
-
-.landing-info-span{
-    color: white;
-    font-weight: 600;
-}
-
-.landing-info-buttons{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-content: center;
-    gap: 24px;
-}
-
-.cv-button{
-    padding: 16px 40px;
-    background-color: white;
-    border-radius: 32px;
-    color: #0C0C0D;
-    font-family: Nunito, sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 100%;
-    border: 1px transparent solid;
-    transition: 350ms;
-    cursor: pointer;
-}
-
-.cv-button:hover{
-    background-color: transparent;
-    color: white;
-    border: 1px white solid;
-}
-
-.button-1{
-    color: #B292FF;
-    padding: 16px 40px;
-    background-color: transparent;
-    font-family: Nunito, sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 100%;
-    border-radius: 32px;
-    border: 1px transparent solid;
-    transition: 350ms;
-    cursor: pointer;
-}
-
-.button-1:hover{
-    border: 1px #B292FF solid;
-}
-
 .landing-info-image{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -249,7 +172,7 @@ a{
 
 .carousel-card-5{
     height: 25vh;
-    background-color: #000000;
+    background-color: #61DBFB;
     border-radius: 60px;
     display: flex;
     flex-direction: column;
@@ -307,7 +230,7 @@ a{
 }
 
 .landing-link-3{
-    color: #6104D6;
+    color: #7940C1;
     font-family: Raleway, sans-serif;
     font-size: 60px;
     font-weight: 500;
@@ -329,6 +252,7 @@ a{
     align-items: flex-start;
     padding: 0 7%;
     margin-bottom: 128px;
+    position: relative;
 }
 
 .landing-tech-heading{
@@ -349,4 +273,137 @@ a{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 40px;
+}
+
+.linear-gradient-2{
+    position: absolute;
+    right: 0;
+    width: 100vh;
+    height: 100vh;
+    background: radial-gradient(circle at center,
+    rgba(97, 4, 214, 0.15) 0%,
+    rgba(97, 4, 214, 0.1) 20%,
+    rgba(97, 4, 214, 0.05) 40%,
+    rgba(97, 4, 214, 0) 60%,
+    rgba(0, 0, 0, 0) 100%);
+    filter: blur(50%);
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1450px) {
+    .landing-tech-cards{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+
+    .carousel-card-1, .carousel-card-2, .carousel-card-3, .carousel-card-4, .carousel-card-5, .carousel-card-6{
+        height: 20vh;
+        padding-left: 16px;
+        gap: 8px;
+        border-radius: 48px;
+    }
+
+    .card-name{
+        font-size: 22px;
+    }
+
+    .landing-experience-cards{
+        gap: 20px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .my-image{
+        width: 250px;
+    }
+
+    .landing-experience-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 7%;
+        gap: 32px;
+    }
+
+    .landing-experience-info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        position: relative;
+    }
+
+    .experience-heading-1{
+        font-size: 50px;
+    }
+
+    .landing-experience-cards{
+        width: 100%;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .landing-info-grid{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .landing-section{
+        height: 100vh;
+        padding: 10% 7%;
+        max-width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .my-image{
+        width: 120px;
+        height: auto;
+    }
+
+    .landing-experience-cards{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .carousel-card-1, .carousel-card-2, .carousel-card-3, .carousel-card-4, .carousel-card-5, .carousel-card-6{
+        border-radius: 40px;
+    }
+
+    .card-name{
+        font-size: 20px;
+    }
+
+    .landing-links-section{
+        gap: 64px;
+    }
+
+    .landing-link-1, .landing-link-2, .landing-link-3{
+        font-size: 40px;
+    }
+
+    .landing-tech-heading{
+        font-size: 32px;
+        text-align: center;
+        line-height: 130%;
+    }
+
+    .landing-tech-section{
+        gap: 16px;
+    }
 }

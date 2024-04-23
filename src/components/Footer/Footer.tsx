@@ -9,7 +9,7 @@ function Footer() {
         <div className={"footer"}>
             <div className={"footer-main"}>
                 <p className={"footer-text-1"}>Follow me</p>
-                <div className={"navbar-social-icons"}>
+                <div className={"navbar-social-icons footer-social-icons"}>
                     <a href={"https://github.com/VeldinS"}>
                         <img className={"social-media-icon"} src={githubIcon} alt={"github icon"}/>
                     </a>

@@ -1,5 +1,6 @@
 .navbar{
     position: fixed;
+    z-index: 999;
     top: 32px;
     width: 100vw;
     display: flex;
@@ -58,6 +59,53 @@
 .social-media-icon{
     width: 30px;
     height: auto;
+}
+
+@media screen and (max-width: 700px) {
+
+    .navbar-content{
+        gap: 22px;
+        padding: 12px 18px;
+    }
+
+    .navlink{
+        font-size: 18px;
+
+    }
+
+    .navbar-social-icons{
+        gap: 12px;
+    }
+
+    .social-media-icon{
+        width: 25px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .navbar{
+        position: fixed;
+        z-index: 999;
+        bottom: 32px;
+        top: auto;
+    }
+
+    .navbar-content{
+        gap: 18px;
+        padding: 18px 24px;
+    }
+
+    .navlink{
+        font-size: 16px;
+
+    }
+
+    .navbar-social-icons{
+        display: none;
+    }
+
 }
 
 
