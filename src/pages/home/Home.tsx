@@ -8,6 +8,15 @@ import reactImg from '../../assets/react.png';
 import nextImg from '../../assets/next.png';
 import mongoImg from '../../assets/mongo.png';
 import webflowImg from '../../assets/webflow.jpg';
+import reactSVG from '../../assets/react.svg';
+import nextSVG from '../../assets/next.svg';
+import viteSVG from '../../assets/vite.svg';
+import astroSVG from '../../assets/astro.svg';
+import expressImg from '../../assets/express.png'
+import nodeImg from '../../assets/node.png'
+
+import TechCard from "../../components/TechCard.tsx";
+
 
 function Home() {
     return (
@@ -71,6 +80,30 @@ function Home() {
                             <img className={"card-image"} src={webflowImg} alt={"Webflow logo"}/>
                             <p className={"card-name"}>Webflow</p>
                         </div>
+                    </div>
+                </section>
+                <section className={"landing-links-section"}>
+                    <a href={'/education'}><h1 className={"landing-link-1"}>Education</h1></a>
+                    <a href={'/experience'}><h1 className={"landing-link-2"}>Experience</h1></a>
+                    <a href={'/projects'}><h1 className={"landing-link-3"}>Projects</h1></a>
+                </section>
+                <section className={"landing-tech-section"}>
+                    <h1 className={"landing-tech-heading"}>These are <br/>
+                        the <span className={"landing-tech-heading-span"}> technologies </span> I’ve been using
+                    </h1>
+                    <div className={"landing-tech-cards"}>
+                        <TechCard cardName={"Front-end Technologies"}
+                                  tech1={"ReactJS"} tech1Img={reactSVG}
+                                  tech2={"NextJS"} tech2Img={nextSVG}
+                                  tech3={"Vite"} tech3Img={viteSVG}
+                                  tech4={"Astro"} tech4Img={astroSVG}
+                                  tech5={"Webflow"} tech5Img={webflowImg}
+                        />
+                        <TechCard cardName={"Back-end Technologies"}
+                                  tech1={"Node.js"} tech1Img={nodeImg}
+                                  tech2={"Express.js"} tech2Img={expressImg}
+                                  tech3={"Mongo"} tech3Img={mongoImg}
+                        />
                     </div>
                 </section>
             </div>

@@ -4,14 +4,41 @@ import {Link, useLocation} from "react-router-dom";
 import githubIcon from '../assets/github.svg';
 import linkedinIcon from '../assets/linkedin.svg';
 import mailIcon from '../assets/mail.svg';
+import {useEffect, useState} from "react";
 
 function Navbar() {
 
     const location = useLocation();
 
+    const [isNavbarOpaque, setIsNavbarOpaque] = useState(true);
+
+    useEffect(() => {
+        let timeoutId:number;
+
+        const handleScroll = () => {
+            clearTimeout(timeoutId);
+            const scrollPosition = window.scrollY;
+            if (scrollPosition > 0) {
+                setIsNavbarOpaque(false);
+            } else {
+                setIsNavbarOpaque(true);
+            }
+            timeoutId = setTimeout(() => {
+                setIsNavbarOpaque(true);
+            }, 300);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+
     return (
         <>
-            <div className={"navbar"}>
+            <div className={isNavbarOpaque ? 'navbar opaque' : 'navbar transparent'}>
                 <div className={"navbar-content"}>
                     <Link className={`navlink ${location.pathname === '/' ? 'navlink-active' : ''}`}
                           to="/">veldinsalcinovic

@@ -5,6 +5,21 @@
     display: flex;
     justify-content: center;
     align-content: center;
+    transition: 500ms;
+}
+
+.opaque {
+    opacity: 1;
+}
+
+.transparent {
+    opacity: 0.3;
+    scale: 0.9;
+}
+
+.navbar:hover {
+    opacity: 1;
+    scale: 1;
 }
 
 .navbar-content{
@@ -14,9 +29,9 @@
     align-items: center;
     gap: 42px;
     padding: 16px 24px;
-    background-color: #211F23;
+    background-color: #000000;
     border-radius: 32px;
-    border: 1px grey solid;
+    border: 1px white solid;
 }
 
 .navlink{
