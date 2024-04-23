@@ -13,7 +13,7 @@ function Navbar() {
     const [isNavbarOpaque, setIsNavbarOpaque] = useState(true);
 
     useEffect(() => {
-        let timeoutId:number;
+        let timeoutId:number | any;
 
         const handleScroll = () => {
             clearTimeout(timeoutId);
