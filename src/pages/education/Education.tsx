@@ -10,24 +10,10 @@ import udemyLogo from '../../assets/udemy.png';
 import ciscoLogo from '../../assets/cisco.png';
 import Footer from "../../components/Footer/Footer.tsx";
 import Typewriter from "typewriter-effect";
+import {Link} from "react-router-dom";
 
 
 function Education() {
-
-    const handleDownload = () => {
-        const cvPath = '../../assets/CV.pdf';
-
-        // Create a link element
-        const link = document.createElement('a');
-        link.href = cvPath;
-        link.setAttribute('download', 'CV.pdf');
-        document.body.appendChild(link);
-
-        link.click();
-
-        document.body.removeChild(link);
-    };
-
     return (
         <>
             <div className={"main-body"}>
@@ -39,9 +25,11 @@ function Education() {
                             <span className='page-info-heading-span'> my education. </span>
                             {"/>"}
                         </h1>
-                        <button onClick={handleDownload} className={"cv-button"}>
-                            Download CV
-                        </button>
+                        <Link target="_blank" rel="noopener noreferrer" to={"https://drive.google.com/file/d/1OlU5W8xeHP5l7vkOrF7WceqN-C5NcrdO/view?usp=sharing"}>
+                            <button className={"cv-button"}>
+                                Download CV
+                            </button>
+                        </Link>
                     </div>
 
                     <div className={"education-wrapper"}>
@@ -57,14 +45,12 @@ function Education() {
                                  cardName={"Software Engineering Bachelor"}
                                  cardField={"International University of Sarajevo"}
                                  startDate={"Oct, 2019"} endDate={"Jun, 2023"}
-                                 cardLink={"/IusCertificate"}
                         />
 
                         <EduCard cardImg={rpsLogo}
                                  cardName={"College"}
                                  cardField={"Richmond Park College"}
                                  startDate={"Sep, 2015"} endDate={"Jun, 2019"}
-                                 cardLink={"/RpsCertificate"}
                         />
                     </div>
                     <div className={"certificates-wrapper"}>
@@ -82,14 +68,14 @@ function Education() {
                                  cardName={"MERN Fullstack"}
                                  cardField={"Udemy"}
                                  startDate={"Jan, 2023"}
-                                 cardLink={"/UdemyMERN"}
+                                 cardLink={"https://www.udemy.com/certificate/UC-d1020728-5b81-491c-91a0-59fbd282eaca/"}
                         />
 
                         <EduCard cardImg={udemyLogo}
                                  cardName={"React and Typescript"}
                                  cardField={"Udemy"}
                                  startDate={"Jan, 2023"}
-                                 cardLink={"/UdemyReactTs"}
+                                 cardLink={"https://www.udemy.com/certificate/UC-87718e87-e3dd-4590-8f5f-4f1394bfc828/"}
                         />
 
                         <EduCard cardImg={udemyLogo}
@@ -111,7 +97,7 @@ function Education() {
                                  cardName={"HTML, CSS and Sass"}
                                  cardField={"Udemy"}
                                  startDate={"Jan, 2022"}
-                                 cardLink={"/HTML&CSS&Sass"}
+                                 cardLink={"https://www.udemy.com/certificate/UC-620af7d7-d2d6-4c80-83c6-3e970d434400/"}
                         />
 
                         <EduCard cardImg={miboLogo}
@@ -125,7 +111,7 @@ function Education() {
                                  cardName={"CCNA Introduction to Networks"}
                                  cardField={"Cisco"}
                                  startDate={"Jun, 2022"}
-                                 cardLink={"/CiscoCCNA"}
+                                 cardLink={"https://www.credly.com/badges/b0e26c3b-8bc6-47b4-a934-e47e474c2a47"}
                         />
 
                     </div>

@@ -4,22 +4,9 @@ import Navbar from "../../components/Navbar/Navbar.tsx";
 import Typewriter from "typewriter-effect";
 import ExpCard from "../../components/ExperienceCard/ExpCard.tsx";
 import Footer from "../../components/Footer/Footer.tsx";
+import {Link} from "react-router-dom";
 
 function Experience() {
-
-    const handleDownload = () => {
-        const cvPath = '../../assets/CV.pdf';
-
-        // Create a link element
-        const link = document.createElement('a');
-        link.href = cvPath;
-        link.setAttribute('download', 'CV.pdf');
-        document.body.appendChild(link);
-
-        link.click();
-
-        document.body.removeChild(link);
-    };
 
     return (
         <div  className={"main-body"}>
@@ -31,9 +18,11 @@ function Experience() {
                         <span className='page-info-heading-span'> Full-stack Software Engineer. </span>
                         {"/>"}
                     </h1>
-                    <button onClick={handleDownload} className={"cv-button"}>
-                        Download CV
-                    </button>
+                    <Link target="_blank" rel="noopener noreferrer" to={"https://drive.google.com/file/d/1OlU5W8xeHP5l7vkOrF7WceqN-C5NcrdO/view?usp=sharing"}>
+                        <button className={"cv-button"}>
+                            Download CV
+                        </button>
+                    </Link>
                 </div>
 
                 <div className={"experience-wrapper"}>

@@ -4,21 +4,6 @@ import Typewriter from 'typewriter-effect';
 import {Link} from "react-router-dom";
 
 function HomeInfo() {
-
-    const handleDownload = () => {
-        const cvPath = '../../assets/CV.pdf';
-
-        // Create a link element
-        const link = document.createElement('a');
-        link.href = cvPath;
-        link.setAttribute('download', 'CV.pdf');
-        document.body.appendChild(link);
-
-        link.click();
-
-        document.body.removeChild(link);
-    };
-
     return (
         <div className={"landing-info-wrapper"}>
 
@@ -39,9 +24,11 @@ function HomeInfo() {
                 has extended beyond coding to effective communication with various departments, to
                 define new features and spearheading the development of new applications.</p>
             <div className={"landing-info-buttons"}>
-                <button onClick={handleDownload} className={"cv-button"}>
-                    Download CV
-                </button>
+                <Link target="_blank" rel="noopener noreferrer" to={"https://drive.google.com/file/d/1OlU5W8xeHP5l7vkOrF7WceqN-C5NcrdO/view?usp=sharing"}>
+                    <button className={"cv-button"}>
+                        Download CV
+                    </button>
+                </Link>
                 <Link to={'/experience'}>
                     <button className={"button-1"}>
                         See experience

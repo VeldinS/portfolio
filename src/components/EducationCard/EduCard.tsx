@@ -7,7 +7,7 @@ interface eduCard{
     cardField: string,
     startDate: string,
     endDate?: string,
-    cardLink: string,
+    cardLink?: string,
 }
 
 function EduCard(props:eduCard) {
@@ -31,7 +31,9 @@ function EduCard(props:eduCard) {
                     </div>
                 </div>
             </div>
-            <Link to={props.cardLink} className={"certificate-link"}>View Certificate</Link>
+            {props.cardLink && (
+                <Link to={props.cardLink} className={"certificate-link"} target="_blank" rel="noopener noreferrer">View Certificate</Link>
+            )}
         </div>
     );
 }
