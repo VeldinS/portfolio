@@ -3,6 +3,8 @@ import './home.css'
 import Navbar from "../../components/Navbar/Navbar.tsx";
 import TechCard from "../../components/TechCard/TechCard.tsx";
 import Footer from "../../components/Footer/Footer.tsx";
+import ContactForm from "../../components/ContactForm/ContactForm.tsx";
+import HomeInfo from "../../components/HomeInfo/HomeInfo.tsx";
 
 import veldinImg from '../../assets/veldin.png';
 import javascriptImg from '../../assets/javascript.png';
@@ -21,13 +23,10 @@ import shopifyImg from '../../assets/shopify.jpg';
 import dockerImg from '../../assets/docker.jpg';
 import kubernetesImg from '../../assets/kubernetes.png';
 import githubImg from '../../assets/github-blue.svg'
-import ContactForm from "../../components/ContactForm/ContactForm.tsx";
-import HomeInfo from "../../components/HomeInfo/HomeInfo.tsx";
 
 
 function Home() {
     return (
-        <>
             <div className={"main-body"}>
                 <Navbar />
                 <section className={"landing-section"}>
@@ -114,7 +113,6 @@ function Home() {
                 <ContactForm/>
                 <Footer/>
             </div>
-        </>
     );
 }
 

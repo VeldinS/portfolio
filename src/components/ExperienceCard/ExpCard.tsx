@@ -1,6 +1,7 @@
 import './expCard.css'
 import '../EducationCard/eduCard.css'
 
+
 interface expCard{
     cardName: string,
     cardEmploymentType: string,

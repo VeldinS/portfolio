@@ -1,10 +1,13 @@
 import './experience.css'
 import '../education/education.css'
-import Navbar from "../../components/Navbar/Navbar.tsx";
+
+import {Link} from "react-router-dom";
 import Typewriter from "typewriter-effect";
+
+import Navbar from "../../components/Navbar/Navbar.tsx";
 import ExpCard from "../../components/ExperienceCard/ExpCard.tsx";
 import Footer from "../../components/Footer/Footer.tsx";
-import {Link} from "react-router-dom";
+
 
 function Experience() {
 

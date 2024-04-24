@@ -1,16 +1,17 @@
 import './education.css'
 
+import Typewriter from "typewriter-effect";
+import {Link} from "react-router-dom";
+
 import Navbar from "../../components/Navbar/Navbar.tsx";
 import EduCard from "../../components/EducationCard/EduCard.tsx";
+import Footer from "../../components/Footer/Footer.tsx";
 
 import iusLogo from '../../assets/ius.png';
 import rpsLogo from '../../assets/rps.png';
 import miboLogo from '../../assets/mibo.png';
 import udemyLogo from '../../assets/udemy.png';
 import ciscoLogo from '../../assets/cisco.png';
-import Footer from "../../components/Footer/Footer.tsx";
-import Typewriter from "typewriter-effect";
-import {Link} from "react-router-dom";
 
 
 function Education() {

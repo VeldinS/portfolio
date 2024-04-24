@@ -1,8 +1,10 @@
 import './footer.css'
 import '../Navbar/navbar.css'
+
 import githubIcon from "../../assets/github.svg";
 import linkedinIcon from "../../assets/linkedin.svg";
 import mailIcon from "../../assets/mail.svg";
+
 
 function Footer() {
     return (

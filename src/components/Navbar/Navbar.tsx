@@ -1,10 +1,12 @@
 import './navbar.css'
+
+import {useEffect, useState} from "react";
 import {Link, useLocation} from "react-router-dom";
 
 import githubIcon from '../../assets/github.svg';
 import linkedinIcon from '../../assets/linkedin.svg';
 import mailIcon from '../../assets/mail.svg';
-import {useEffect, useState} from "react";
+
 
 function Navbar() {
 

@@ -1,5 +1,6 @@
 import './techCard.css'
 
+
 interface cardData{
     cardName: string,
     tech1: string,

@@ -1,5 +1,7 @@
 import './eduCard.css'
+
 import {Link} from "react-router-dom";
+
 
 interface eduCard{
     cardImg: any,

@@ -1,5 +1,7 @@
 import './contactForm.css'
+
 import {SetStateAction, useState} from "react";
+
 
 function ContactForm() {
 
@@ -41,7 +43,6 @@ function ContactForm() {
 
         sendDataToEmailService(formData);
     }
-
 
     return (
         <div className={"form-wrapper"}>
