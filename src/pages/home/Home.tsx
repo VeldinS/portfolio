@@ -76,7 +76,7 @@ function Home() {
                 <section className={"landing-links-section"}>
                     <a href={'/education'}><h1 className={"landing-link-1"}>Education</h1></a>
                     <a href={'/experience'}><h1 className={"landing-link-2"}>Experience</h1></a>
-                    <a href={'/projects'}><h1 className={"landing-link-3"}>Projects</h1></a>
+                    <a href={'/experience'}><h1 className={"landing-link-3"}>Projects</h1></a>
                 </section>
                 <section className={"landing-tech-section"}>
                     <div className={"linear-gradient-2"}></div>

@@ -13,6 +13,21 @@ import Typewriter from "typewriter-effect";
 
 
 function Education() {
+
+    const handleDownload = () => {
+        const cvPath = '../../assets/CV.pdf';
+
+        // Create a link element
+        const link = document.createElement('a');
+        link.href = cvPath;
+        link.setAttribute('download', 'CV.pdf');
+        document.body.appendChild(link);
+
+        link.click();
+
+        document.body.removeChild(link);
+    };
+
     return (
         <>
             <div className={"main-body"}>
@@ -24,7 +39,7 @@ function Education() {
                             <span className='page-info-heading-span'> my education. </span>
                             {"/>"}
                         </h1>
-                        <button className={"cv-button"}>
+                        <button onClick={handleDownload} className={"cv-button"}>
                             Download CV
                         </button>
                     </div>

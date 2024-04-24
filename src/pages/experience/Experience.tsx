@@ -6,6 +6,21 @@ import ExpCard from "../../components/ExperienceCard/ExpCard.tsx";
 import Footer from "../../components/Footer/Footer.tsx";
 
 function Experience() {
+
+    const handleDownload = () => {
+        const cvPath = '../../assets/CV.pdf';
+
+        // Create a link element
+        const link = document.createElement('a');
+        link.href = cvPath;
+        link.setAttribute('download', 'CV.pdf');
+        document.body.appendChild(link);
+
+        link.click();
+
+        document.body.removeChild(link);
+    };
+
     return (
         <div  className={"main-body"}>
             <Navbar />
@@ -16,7 +31,7 @@ function Experience() {
                         <span className='page-info-heading-span'> Full-stack Software Engineer. </span>
                         {"/>"}
                     </h1>
-                    <button className={"cv-button"}>
+                    <button onClick={handleDownload} className={"cv-button"}>
                         Download CV
                     </button>
                 </div>
