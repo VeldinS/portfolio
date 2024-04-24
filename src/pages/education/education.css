@@ -15,6 +15,7 @@ a{
     justify-content: flex-start;
     background-color: #0C0C0D;
     position: relative;
+    overflow: hidden;
 }
 
 .education-cards-wrapper{
