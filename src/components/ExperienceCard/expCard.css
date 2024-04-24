@@ -1,0 +1,77 @@
+.experience-card{
+    background-color: #131313;
+    border-radius: 64px;
+    width: 100%;
+    padding: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #272727;
+}
+
+.experience-details{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.company-name{
+    font-family: Raleway, sans-serif;
+    color: #B292FF;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.experience-paragraph{
+    font-family: Raleway, sans-serif;
+    color: #6F6F6F;
+    font-size: 22px;
+    line-height: 180%;
+    font-weight: 400;
+    margin: 0;
+}
+
+@media screen and (max-width: 1250px) {
+    .experience-card{
+        flex-direction: column;
+        gap: 64px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .experience-details {
+        width: 100%;
+    }
+
+    .company-name{
+        font-size: 28px;
+    }
+
+    .experience-info{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .company-name{
+        font-size: 22px;
+    }
+
+    .experience-paragraph{
+        font-size: 18px;
+        line-height: 150%;
+    }
+
+    .experience-card{
+        padding: 48px;
+    }
+
+}

@@ -18,6 +18,17 @@ function Education() {
             <div className={"main-body"}>
                 <Navbar/>
                 <section className={"education-cards-wrapper"}>
+                    <div className={"page-info-wrapper"}>
+                        <h1 className={"page-info-heading"}>
+                            {"< Here, you can see my certificates and courses"}<br/> {"achieved throughout"}
+                            <span className='page-info-heading-span'> my education. </span>
+                            {"/>"}
+                        </h1>
+                        <button className={"cv-button"}>
+                            Download CV
+                        </button>
+                    </div>
+
                     <div className={"education-wrapper"}>
                         <div className={"linear-gradient-3"}></div>
                         <h1 className={"education-cards-heading"}><Typewriter
