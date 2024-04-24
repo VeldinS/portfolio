@@ -14,6 +14,7 @@ a{
     align-items: center;
     justify-content: flex-start;
     background-color: #0C0C0D;
+    position: relative;
 }
 
 .education-cards-wrapper{
@@ -33,6 +34,22 @@ a{
     justify-content: flex-start;
     align-items: flex-start;
     gap: 64px;
+    position: relative;
+}
+
+.linear-gradient-3{
+    position: absolute;
+    right: 0;
+    width: 100vh;
+    height: 100vh;
+    background: radial-gradient(circle at center,
+    rgba(97, 4, 214, 0.15) 0%,
+    rgba(97, 4, 214, 0.1) 20%,
+    rgba(97, 4, 214, 0.05) 40%,
+    rgba(97, 4, 214, 0) 60%,
+    rgba(0, 0, 0, 0) 100%);
+    filter: blur(50%);
+    border-radius: 50%;
 }
 
 .education-cards-heading{
@@ -52,6 +69,39 @@ a{
     justify-content: flex-start;
     align-items: flex-start;
     gap: 64px;
+    position: relative;
+}
+
+.linear-gradient-4{
+    position: absolute;
+    left: 0;
+    top: 15%;
+    width: 100vh;
+    height: 100vh;
+    background: radial-gradient(circle at center,
+    rgba(128, 128, 128, 0.15) 0%,
+    rgba(128, 128, 128, 0.1) 20%,
+    rgba(128, 128, 128, 0.05) 40%,
+    rgba(128, 128, 128, 0) 60%,
+    rgba(0, 0, 0, 0) 100%);
+    filter: blur(50%);
+    border-radius: 50%;
+}
+
+.linear-gradient-5{
+    position: absolute;
+    right: 20%;
+    bottom: 0;
+    width: 100vh;
+    height: 100vh;
+    background: radial-gradient(circle at center,
+    rgba(97, 4, 214, 0.15) 0%,
+    rgba(97, 4, 214, 0.1) 20%,
+    rgba(97, 4, 214, 0.05) 40%,
+    rgba(97, 4, 214, 0) 60%,
+    rgba(0, 0, 0, 0) 100%);
+    filter: blur(50%);
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 1100px) {

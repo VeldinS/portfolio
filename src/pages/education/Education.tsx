@@ -19,6 +19,7 @@ function Education() {
                 <Navbar/>
                 <section className={"education-cards-wrapper"}>
                     <div className={"education-wrapper"}>
+                        <div className={"linear-gradient-3"}></div>
                         <h1 className={"education-cards-heading"}><Typewriter
                             options={{
                                 strings: ['Education', 'University', 'Diplomas'],
@@ -41,6 +42,7 @@ function Education() {
                         />
                     </div>
                     <div className={"certificates-wrapper"}>
+                        <div className={"linear-gradient-4"}></div>
                         <h1 className={"education-cards-heading"}>
                             <Typewriter
                                 options={{
@@ -102,7 +104,8 @@ function Education() {
 
                     </div>
                 </section>
-                <Footer />
+                <Footer/>
+                <div className={"linear-gradient-5"}></div>
             </div>
         </>
     );
