@@ -1,0 +1,155 @@
+.edu-card{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 64px;
+    border: 1px solid #272727;
+    padding: 64px;
+}
+
+.education-info-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32px;
+}
+
+.education-image-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #131313;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.education-image{
+    width: 80px;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.education-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.education-heading{
+    color: white;
+    font-size: 28px;
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+    line-height: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.education-field{
+    color: #B292FF;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 100%;
+    font-family: Raleway, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+.education-date-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+.education-date{
+    color: #6F6F6F;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 100%;
+    font-family: Raleway, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+.circle{
+    width: 5px;
+    height: 5px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.certificate-link{
+    font-size: 22px;
+    color: #5FB9B0;
+    font-weight: 400;
+    line-height: 100%;
+    font-family: Raleway, sans-serif;
+    margin: 0;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .edu-card{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 32px;
+        padding: 32px;
+    }
+
+    .education-info-wrapper{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .education-info{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .certificate-link{
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .edu-card{
+        padding: 32px 6px;
+    }
+
+    .education-heading{
+        font-size: 22px;
+    }
+
+    .education-field{
+        font-size: 18px;
+    }
+
+    .education-info{
+        gap: 24px;
+    }
+
+    .certificate-link{
+        font-size: 18px;
+    }
+
+}
+
