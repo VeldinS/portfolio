@@ -23,6 +23,7 @@ import shopifyImg from '../../assets/shopify.jpg';
 import dockerImg from '../../assets/docker.jpg';
 import kubernetesImg from '../../assets/kubernetes.png';
 import githubImg from '../../assets/github-blue.svg'
+import {Link} from "react-router-dom";
 
 
 function Home() {
@@ -73,9 +74,9 @@ function Home() {
                     </div>
                 </section>
                 <section className={"landing-links-section"}>
-                    <a href={'/education'}><h1 className={"landing-link-1"}>Education</h1></a>
-                    <a href={'/experience'}><h1 className={"landing-link-2"}>Experience</h1></a>
-                    <a href={'/experience'}><h1 className={"landing-link-3"}>Projects</h1></a>
+                    <Link to={'/education'}><h1 className={"landing-link-1"}>Education</h1></Link>
+                    <Link to={'/experience'}><h1 className={"landing-link-2"}>Experience</h1></Link>
+                    <Link to={'/experience'}><h1 className={"landing-link-3"}>Projects</h1></Link>
                 </section>
                 <section className={"landing-tech-section"}>
                     <div className={"linear-gradient-2"}></div>
