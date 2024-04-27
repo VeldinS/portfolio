@@ -48,3 +48,11 @@
     height: 1px;
     border-radius: 32px;
 }
+
+@media screen and (max-width: 600px) {
+    .modal {
+        top: 40px;
+        right: auto;
+        left: auto;
+    }
+}
