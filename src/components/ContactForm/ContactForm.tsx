@@ -1,6 +1,7 @@
 import './contactForm.css'
 
 import {SetStateAction, useState} from "react";
+import Modal from "../Modal/Modal.tsx";
 
 
 function ContactForm() {
@@ -19,6 +20,7 @@ function ContactForm() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [showSuccessModal, setShowSuccessModal] = useState(false);
 
     const handleNameChange = (event: { target: { value: SetStateAction<string>; }; }) => {
         setName(event.target.value);
@@ -32,7 +34,7 @@ function ContactForm() {
         setMessage(event.target.value);
     };
 
-     async function handleFormSubmit(event: any) {
+    async function handleFormSubmit(event: any) {
         event.preventDefault();
 
         const formData = {
@@ -43,6 +45,8 @@ function ContactForm() {
 
         try {
             await sendDataToEmailService(formData);
+            console.log('FORM SUBMITTED');
+            setShowSuccessModal(true);
 
             window.scrollTo({
                 top: 0,
@@ -52,20 +56,30 @@ function ContactForm() {
             setName('');
             setEmail('');
             setMessage('');
-        }catch (error) {
+        } catch (error) {
             console.error('Error sending data:', error);
         }
-
     }
+
+    const handleCloseModal = () => {
+        setTimeout(() => {
+            setShowSuccessModal(false);
+        }, 300);
+
+    };
 
 
     return (
         <div className={"form-wrapper"}>
             <h1 className={"form-heading"}>Let's start from here</h1>
-            <form id="email-form" name="email-form" data-name="Email Form" method="get"  className={"form"} onSubmit={handleFormSubmit}>
-                <input onChange={handleNameChange} className={"form-input"} placeholder={'Name'} name={"name"} id={"name"} value={name}/>
-                <input onChange={handleEmailChange} className={"form-input"} placeholder={'Email'} name={"email"} id={"email"} value={email}/>
-                <textarea  onChange={handleMessageChange} className={"form-textarea"} placeholder={'Message'} name={"message"} id={"message"} value={message}/>
+            <form id="email-form" name="email-form" data-name="Email Form" method="get" className={"form"}
+                  onSubmit={handleFormSubmit}>
+                <input onChange={handleNameChange} className={"form-input"} placeholder={'Name'} name={"name"}
+                       id={"name"} value={name}/>
+                <input onChange={handleEmailChange} className={"form-input"} placeholder={'Email'} name={"email"}
+                       id={"email"} value={email}/>
+                <textarea onChange={handleMessageChange} className={"form-textarea"} placeholder={'Message'}
+                          name={"message"} id={"message"} value={message}/>
 
                 <button className={"form-button"} type={"submit"}>
                     <p>Send!</p>
@@ -85,10 +99,12 @@ function ContactForm() {
                     </svg>
                 </button>
             </form>
+            {showSuccessModal &&
+                <Modal onClose={handleCloseModal}/>
+            }
         </div>
     );
 }
-
 
 
 export default ContactForm;
