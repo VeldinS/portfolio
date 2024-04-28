@@ -1,18 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-	<loc>https://veldin.dev/</loc>
-	<lastmod>2024-04-28T22:02:34+01:00</lastmod>
-	<priority>0.8</priority>
-</url>
-<url>
-	<loc>https://veldin.dev/education</loc>
-	<lastmod>2024-04-28T22:02:34+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://veldin.dev/experience</loc>
-	<lastmod>2024-04-28T22:02:34+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-</urlset>
+	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+		<url>
+			<loc>https://veldin.dev/</loc>
+		</url>
+		<url>
+			<loc>https://veldin.dev/education</loc>
+		</url>
+		<url>
+			<loc>https://veldin.dev/experience</loc>
+		</url>
+	</urlset>
