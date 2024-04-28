@@ -72,33 +72,35 @@ function ContactForm() {
     return (
         <div className={"form-wrapper"}>
             <h1 className={"form-heading"}>Let's start from here</h1>
-            <form id="email-form" name="email-form" data-name="Email Form" method="get" className={"form"}
-                  onSubmit={handleFormSubmit}>
-                <input onChange={handleNameChange} className={"form-input"} placeholder={'Name'} name={"name"}
-                       id={"name"} value={name}/>
-                <input onChange={handleEmailChange} className={"form-input"} placeholder={'Email'} name={"email"}
-                       id={"email"} value={email}/>
-                <textarea onChange={handleMessageChange} className={"form-textarea"} placeholder={'Message'}
-                          name={"message"} id={"message"} value={message}/>
+            <div className="form-container">
+                <form id="email-form" name="email-form" data-name="Email Form" method="get" className={"form"}
+                      onSubmit={handleFormSubmit}>
+                    <input onChange={handleNameChange} className={"form-input"} placeholder={'Name'} name={"name"}
+                           id={"name"} value={name}/>
+                    <input onChange={handleEmailChange} className={"form-input"} placeholder={'Email'} name={"email"}
+                           id={"email"} value={email}/>
+                    <textarea onChange={handleMessageChange} className={"form-textarea"} placeholder={'Message'}
+                              name={"message"} id={"message"} value={message}/>
 
-                <button className={"form-button"} type={"submit"}>
-                    <p>Send!</p>
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth="4"
-                    >
-                        <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                        ></path>
-                    </svg>
-                </button>
-            </form>
+                    <button className={"form-button"} type={"submit"}>
+                        <p>Send!</p>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-6 w-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth="4"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"
+                            ></path>
+                        </svg>
+                    </button>
+                </form>
+            </div>
             {showSuccessModal &&
                 <Modal onClose={handleCloseModal}/>
             }
