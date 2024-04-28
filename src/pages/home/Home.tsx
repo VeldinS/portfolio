@@ -1,3 +1,7 @@
+import {useEffect} from "react";
+
+import {Link} from "react-router-dom";
+
 import './home.css'
 
 import Navbar from "../../components/Navbar/Navbar.tsx";
@@ -23,10 +27,17 @@ import shopifyImg from '../../assets/shopify.jpg';
 import dockerImg from '../../assets/docker.jpg';
 import kubernetesImg from '../../assets/kubernetes.png';
 import githubImg from '../../assets/github-blue.svg'
-import {Link} from "react-router-dom";
 
 
 function Home() {
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }, []);
+
     return (
             <div className={"main-body"}>
                 <Navbar />

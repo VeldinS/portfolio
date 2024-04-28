@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import './experience.css'
 import '../education/education.css'
 
@@ -10,6 +12,13 @@ import Footer from "../../components/Footer/Footer.tsx";
 
 
 function Experience() {
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }, []);
 
     return (
         <div  className={"main-body"}>

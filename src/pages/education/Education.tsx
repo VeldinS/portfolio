@@ -1,3 +1,5 @@
+import {useEffect} from "react";
+
 import './education.css'
 
 import Typewriter from "typewriter-effect";
@@ -15,6 +17,14 @@ import ciscoLogo from '../../assets/cisco.png';
 
 
 function Education() {
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }, []);
+
     return (
         <>
             <div className={"main-body"}>
