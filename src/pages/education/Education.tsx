@@ -97,6 +97,13 @@ function Education() {
                         />
 
                         <EduCard cardImg={udemyLogo}
+                                 cardName={"Figma UI UX"}
+                                 cardField={"Udemy"}
+                                 startDate={"2024"}
+                                 cardLink={"/Figma"}
+                        />
+
+                        <EduCard cardImg={udemyLogo}
                                  cardName={"Microservices with NodeJS and React"}
                                  cardField={"Udemy"}
                                  startDate={"2024"}
