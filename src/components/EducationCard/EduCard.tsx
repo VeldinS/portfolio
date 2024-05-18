@@ -10,6 +10,12 @@ interface eduCard{
     startDate: string,
     endDate?: string,
     cardLink?: string,
+    techImg1?: any,
+    techImg2?: any,
+    techImg3?: any,
+    techImg4?: any,
+    techImg5?: any,
+    techImg6?: any
 }
 
 function EduCard(props:eduCard) {
@@ -29,6 +35,26 @@ function EduCard(props:eduCard) {
                         )}
                         {props.endDate && (
                             <p className={"education-date"}>{props.endDate}</p>
+                        )}
+                    </div>
+                    <div className={"edu-tech-wrapper"}>
+                        {props.techImg1 && (
+                            <img className={"edu-tech-img"} src={props.techImg1} alt={props.cardName}/>
+                        )}
+                        {props.techImg2 && (
+                            <img className={"edu-tech-img"} src={props.techImg2} alt={props.cardName}/>
+                        )}
+                        {props.techImg3 && (
+                            <img className={"edu-tech-img"} src={props.techImg3} alt={props.cardName}/>
+                        )}
+                        {props.techImg4 && (
+                            <img className={"edu-tech-img"} src={props.techImg4} alt={props.cardName}/>
+                        )}
+                        {props.techImg5 && (
+                            <img className={"edu-tech-img"} src={props.techImg5} alt={props.cardName}/>
+                        )}
+                        {props.techImg6 && (
+                            <img className={"edu-tech-img"} src={props.techImg6} alt={props.cardName}/>
                         )}
                     </div>
                 </div>

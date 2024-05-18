@@ -14,7 +14,23 @@ import rpsLogo from '../../assets/rps.png';
 import miboLogo from '../../assets/mibo.png';
 import udemyLogo from '../../assets/udemy.png';
 import ciscoLogo from '../../assets/cisco.png';
-
+import dcokerLogo from '../../assets/docker.jpg';
+import expressLogo from '../../assets/express.png';
+import nextLogo from '../../assets/next.svg';
+import githubLogo from '../../assets/github.svg';
+import javascriptLogo from '../../assets/javascript.png';
+import typescriptLogo from '../../assets/typescript.png';
+import kubernetesLogo from '../../assets/kubernetes.png';
+import mongoLogo from '../../assets/mongo.png';
+import nodeLogo from '../../assets/node.png';
+import reactLogo from '../../assets/react.svg';
+import webflowLogo from '../../assets/webflow.jpg';
+import tailwindLogo from '../../assets/tailwind.png';
+import shopifyLogo from '../../assets/shopify.jpg';
+import viteLogo from '../../assets/vite.svg';
+import figmaLogo from '../../assets/figma.png';
+import htmlLogo from '../../assets/html.png';
+import cssLogo from '../../assets/css.png';
 
 function Education() {
 
@@ -80,6 +96,12 @@ function Education() {
                                  cardField={"Udemy"}
                                  startDate={"Jan, 2023"}
                                  cardLink={"https://www.udemy.com/certificate/UC-d1020728-5b81-491c-91a0-59fbd282eaca/"}
+                                 techImg1={reactLogo}
+                                 techImg2={nodeLogo}
+                                 techImg3={expressLogo}
+                                 techImg4={mongoLogo}
+                                 techImg5={githubLogo}
+                                 techImg6={viteLogo}
                         />
 
                         <EduCard cardImg={udemyLogo}
@@ -87,6 +109,10 @@ function Education() {
                                  cardField={"Udemy"}
                                  startDate={"Jan, 2023"}
                                  cardLink={"https://www.udemy.com/certificate/UC-87718e87-e3dd-4590-8f5f-4f1394bfc828/"}
+                                 techImg1={reactLogo}
+                                 techImg2={typescriptLogo}
+                                 techImg3={githubLogo}
+                                 techImg4={tailwindLogo}
                         />
 
                         <EduCard cardImg={udemyLogo}
@@ -94,6 +120,10 @@ function Education() {
                                  cardField={"Udemy"}
                                  startDate={"2024"}
                                  cardLink={"/Next&React"}
+                                 techImg1={nextLogo}
+                                 techImg2={reactLogo}
+                                 techImg3={githubLogo}
+                                 techImg4={tailwindLogo}
                         />
 
                         <EduCard cardImg={udemyLogo}
@@ -101,6 +131,7 @@ function Education() {
                                  cardField={"Udemy"}
                                  startDate={"2024"}
                                  cardLink={"/Figma"}
+                                 techImg1={figmaLogo}
                         />
 
                         <EduCard cardImg={udemyLogo}
@@ -108,6 +139,20 @@ function Education() {
                                  cardField={"Udemy"}
                                  startDate={"2024"}
                                  cardLink={"/Microservices&React"}
+                                 techImg1={reactLogo}
+                                 techImg2={nodeLogo}
+                                 techImg3={expressLogo}
+                                 techImg4={dcokerLogo}
+                                 techImg5={kubernetesLogo}
+                        />
+
+                        <EduCard cardImg={webflowLogo}
+                                 cardName={"No-code Development"}
+                                 cardField={"Webflow"}
+                                 startDate={"2023"}
+                                 cardLink={"/Webflow"}
+                                 techImg1={webflowLogo}
+                                 techImg2={shopifyLogo}
                         />
 
 
@@ -116,6 +161,9 @@ function Education() {
                                  cardField={"Udemy"}
                                  startDate={"Jan, 2022"}
                                  cardLink={"https://www.udemy.com/certificate/UC-620af7d7-d2d6-4c80-83c6-3e970d434400/"}
+                                 techImg1={htmlLogo}
+                                 techImg2={cssLogo}
+                                 techImg3={javascriptLogo}
                         />
 
                         <EduCard cardImg={miboLogo}
@@ -123,6 +171,7 @@ function Education() {
                                  cardField={"MIBO Komunikacije"}
                                  startDate={"Jun, 2022"}
                                  cardLink={"/MIBOWorkshop"}
+                                 techImg1={ciscoLogo}
                         />
 
                         <EduCard cardImg={ciscoLogo}
@@ -130,6 +179,7 @@ function Education() {
                                  cardField={"Cisco"}
                                  startDate={"Jun, 2022"}
                                  cardLink={"https://www.credly.com/badges/b0e26c3b-8bc6-47b4-a934-e47e474c2a47"}
+                                 techImg1={ciscoLogo}
                         />
 
                     </div>
