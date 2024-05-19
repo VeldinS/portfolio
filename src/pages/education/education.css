@@ -75,6 +75,7 @@ a{
     rgba(0, 0, 0, 0) 100%);
     filter: blur(50%);
     border-radius: 50%;
+    z-index: 1;
 }
 
 .education-cards-heading{
@@ -111,6 +112,7 @@ a{
     rgba(0, 0, 0, 0) 100%);
     filter: blur(50%);
     border-radius: 50%;
+    z-index: 1;
 }
 
 .linear-gradient-5{
@@ -127,6 +129,7 @@ a{
     rgba(0, 0, 0, 0) 100%);
     filter: blur(50%);
     border-radius: 50%;
+    z-index: 1;
 }
 
 @media screen and (max-width: 1100px) {

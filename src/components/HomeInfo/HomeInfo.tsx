@@ -20,7 +20,7 @@ function HomeInfo() {
             <p className={"landing-info"}>During these
                 <span className={"landing-info-span"}> 2 years </span>
                 as
-                <span className={"landing-info-span"}> Full-stack Software Engineer. </span>
+                <span className={"landing-info-span"}> Full-stack Software Engineer </span>
                 my role
                 has extended beyond coding to effective communication with various departments, to
                 define new features and spearheading the development of new applications.</p>

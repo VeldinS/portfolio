@@ -76,6 +76,7 @@ a{
     rgba(0, 0, 0, 0) 100%);
     filter: blur(50%);
     border-radius: 50%;
+    z-index: 1;
 }
 
 .experience-text-1{
@@ -85,6 +86,8 @@ a{
     line-height: 100%;
     color: #6F6F6F;
     margin: 0;
+    position: relative;
+    z-index: 2;
 }
 
 .experience-heading-1{
@@ -94,6 +97,8 @@ a{
     line-height: 100%;
     color: #FFFFFF;
     margin: 0;
+    position: relative;
+    z-index: 2;
 }
 
 .experience-text-2{
@@ -263,6 +268,8 @@ a{
     font-weight: 300;
     line-height: 100%;
     color: #C8C8C8;
+    position: relative;
+    z-index: 2;
 }
 
 .landing-tech-heading-span{
@@ -290,6 +297,7 @@ a{
     rgba(0, 0, 0, 0) 100%);
     filter: blur(50%);
     border-radius: 50%;
+    z-index: 1;
 }
 
 @media screen and (max-width: 1450px) {

@@ -12,10 +12,10 @@ function Footer() {
             <div className={"footer-main"}>
                 <p className={"footer-text-1"}>Follow me</p>
                 <div className={"navbar-social-icons footer-social-icons"}>
-                    <a href={"https://github.com/VeldinS"}>
+                    <a  href={"https://github.com/VeldinS"} target="_blank">
                         <img className={"social-media-icon"} src={githubIcon} alt={"github icon"}/>
                     </a>
-                    <a href={"https://www.linkedin.com/in/veldin-sal%C4%8Dinovi%C4%87-534294249/"}>
+                    <a href={"https://www.linkedin.com/in/veldin-sal%C4%8Dinovi%C4%87-534294249/"} target="_blank">
                         <img className={"social-media-icon"} src={linkedinIcon} alt={"linkedin icon"}/>
                     </a>
                     <a href={"mailto: veldinsalcinovic123@gmail.com"}>
