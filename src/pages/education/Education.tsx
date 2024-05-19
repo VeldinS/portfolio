@@ -130,7 +130,7 @@ function Education() {
                                  cardName={"Figma UI UX"}
                                  cardField={"Udemy"}
                                  startDate={"2024"}
-                                 cardLink={"/Figma"}
+                                 cardLink={"https://www.udemy.com/certificate/UC-784332cd-ae67-4630-ba26-be14f62523ff/"}
                                  techImg1={figmaLogo}
                         />
 
