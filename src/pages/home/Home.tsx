@@ -15,7 +15,7 @@ import javascriptImg from '../../assets/javascript.png';
 import typescriptImg from '../../assets/typescript.png';
 import reactImg from '../../assets/react.png';
 import nextImg from '../../assets/next.png';
-import mongoImg from '../../assets/mongo.png';
+import mongoImg from '../../assets/mongo.svg';
 import webflowImg from '../../assets/webflow.jpg';
 import reactSVG from '../../assets/react.svg';
 import nextSVG from '../../assets/next.svg';
@@ -27,6 +27,7 @@ import shopifyImg from '../../assets/shopify.jpg';
 import dockerImg from '../../assets/docker.jpg';
 import kubernetesImg from '../../assets/kubernetes.png';
 import githubImg from '../../assets/github-blue.svg'
+import figmImg from '../../assets/figma.png'
 
 
 function Home() {
@@ -58,14 +59,6 @@ function Home() {
                         <div className={"linear-gradient-1"} ></div>
                     </div>
                     <div className={"landing-experience-cards"}>
-                        <div className={"carousel-card-1"}>
-                            <img className={"card-image"} src={javascriptImg} alt={"Javascript logo"}/>
-                            <p className={"card-name"}>Javascript</p>
-                        </div>
-                        <div className={"carousel-card-2"}>
-                            <img className={"card-image"} src={typescriptImg} alt={"Typescript logo"}/>
-                            <p className={"card-name"}>Typescript</p>
-                        </div>
                         <div className={"carousel-card-3"}>
                             <img className={"card-image"} src={reactImg} alt={"React.js logo"}/>
                             <p className={"card-name"}>React.js</p>
@@ -73,6 +66,14 @@ function Home() {
                         <div className={"carousel-card-4"}>
                             <img className={"card-image"} src={nextImg} alt={"Next.js logo"}/>
                             <p className={"card-name"}>Next.js</p>
+                        </div>
+                        <div className={"carousel-card-2"}>
+                            <img className={"card-image"} src={figmImg} alt={"Figma logo"}/>
+                            <p className={"card-name"}>Figma</p>
+                        </div>
+                        <div className={"carousel-card-1"}>
+                            <img className={"card-image"} src={javascriptImg} alt={"Javascript logo"}/>
+                            <p className={"card-name"}>Javascript</p>
                         </div>
                         <div className={"carousel-card-5"}>
                             <img className={"card-image"} src={mongoImg} alt={"Mongo logo"}/>
