@@ -30,7 +30,7 @@ function Experience() {
                         <span className='page-info-heading-span'> Full-stack Software Engineer. </span>
                         {"/>"}
                     </h1>
-                    <Link target="_blank" rel="noopener noreferrer" to={"https://drive.google.com/file/d/1OlU5W8xeHP5l7vkOrF7WceqN-C5NcrdO/view?usp=sharing"}>
+                    <Link target="_blank" rel="noopener noreferrer" to={"https://drive.google.com/file/d/1p2Pby0NyxchP92MQufJUtQ9qg0lC1JaF/view?usp=sharing"}>
                         <button className={"cv-button"}>
                             Download CV
                         </button>

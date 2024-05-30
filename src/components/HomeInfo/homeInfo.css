@@ -52,6 +52,8 @@
     border: 1px transparent solid;
     transition: 350ms;
     cursor: pointer;
+    position: relative;
+    z-index: 10;
 }
 
 .cv-button:hover{
