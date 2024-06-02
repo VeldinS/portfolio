@@ -28,6 +28,7 @@ import dockerImg from '../../assets/docker.jpg';
 import kubernetesImg from '../../assets/kubernetes.png';
 import githubImg from '../../assets/github-blue.svg'
 import figmImg from '../../assets/figma.png'
+import RevealComp from "../../components/Animations/reveal.tsx";
 
 
 function Home() {
@@ -59,36 +60,54 @@ function Home() {
                         <div className={"linear-gradient-1"} ></div>
                     </div>
                     <div className={"landing-experience-cards"}>
-                        <div className={"carousel-card-3"}>
-                            <img className={"card-image"} src={reactImg} alt={"React.js logo"}/>
-                            <p className={"card-name"}>React.js</p>
-                        </div>
-                        <div className={"carousel-card-4"}>
-                            <img className={"card-image"} src={nextImg} alt={"Next.js logo"}/>
-                            <p className={"card-name"}>Next.js</p>
-                        </div>
-                        <div className={"carousel-card-2"}>
-                            <img className={"card-image"} src={figmImg} alt={"Figma logo"}/>
-                            <p className={"card-name"}>Figma</p>
-                        </div>
-                        <div className={"carousel-card-1"}>
-                            <img className={"card-image"} src={javascriptImg} alt={"Javascript logo"}/>
-                            <p className={"card-name"}>Javascript</p>
-                        </div>
-                        <div className={"carousel-card-5"}>
-                            <img className={"card-image"} src={mongoImg} alt={"Mongo logo"}/>
-                            <p className={"card-name"}>Mongo</p>
-                        </div>
-                        <div className={"carousel-card-6"}>
-                            <img className={"card-image"} src={webflowImg} alt={"Webflow logo"}/>
-                            <p className={"card-name"}>Webflow</p>
-                        </div>
+                        <RevealComp delay={'200ms'} threshold={0.5} duration={'300ms'} x={-30} y={0}>
+                            <div className={"carousel-card-3"}>
+                                <img className={"card-image"} src={reactImg} alt={"React.js logo"}/>
+                                <p className={"card-name"}>React.js</p>
+                            </div>
+                        </RevealComp>
+                        <RevealComp delay={'400ms'} threshold={0.5} duration={'300ms'} x={-30} y={0}>
+                            <div className={"carousel-card-4"}>
+                                <img className={"card-image"} src={nextImg} alt={"Next.js logo"}/>
+                                <p className={"card-name"}>Next.js</p>
+                            </div>
+                        </RevealComp>
+                        <RevealComp delay={'600ms'} threshold={0.5} duration={'300ms'} x={-30} y={0}>
+                            <div className={"carousel-card-2"}>
+                                <img className={"card-image"} src={figmImg} alt={"Figma logo"}/>
+                                <p className={"card-name"}>Figma</p>
+                            </div>
+                        </RevealComp>
+                        <RevealComp delay={'200ms'} threshold={0.5} duration={'300ms'} x={-30} y={0}>
+                            <div className={"carousel-card-1"}>
+                                <img className={"card-image"} src={javascriptImg} alt={"Javascript logo"}/>
+                                <p className={"card-name"}>Javascript</p>
+                            </div>
+                        </RevealComp>
+                        <RevealComp delay={'400ms'} threshold={0.5} duration={'300ms'} x={-30} y={0}>
+                            <div className={"carousel-card-5"}>
+                                <img className={"card-image"} src={mongoImg} alt={"Mongo logo"}/>
+                                <p className={"card-name"}>Mongo</p>
+                            </div>
+                        </RevealComp>
+                        <RevealComp delay={'600ms'} threshold={0.5} duration={'300ms'} x={-30} y={0}>
+                            <div className={"carousel-card-6"}>
+                                <img className={"card-image"} src={webflowImg} alt={"Webflow logo"}/>
+                                <p className={"card-name"}>Webflow</p>
+                            </div>
+                        </RevealComp>
                     </div>
                 </section>
                 <section className={"landing-links-section"}>
-                    <Link to={'/education'}><h1 className={"landing-link-1"}>Education</h1></Link>
-                    <Link to={'/experience'}><h1 className={"landing-link-2"}>Experience</h1></Link>
-                    <Link to={'/experience'}><h1 className={"landing-link-3"}>Projects</h1></Link>
+                    <RevealComp delay={'200ms'} threshold={0.5} duration={'300ms'} x={-30} y={0}>
+                        <Link to={'/education'}><h1 className={"landing-link-1"}>Education</h1></Link>
+                    </RevealComp>
+                    <RevealComp delay={'400ms'} threshold={0.5} duration={'300ms'} x={30} y={0}>
+                        <Link to={'/experience'}><h1 className={"landing-link-2"}>Experience</h1></Link>
+                    </RevealComp>
+                    <RevealComp delay={'600ms'} threshold={0.5} duration={'300ms'} x={-30} y={0}>
+                        <Link to={'/experience'}><h1 className={"landing-link-3"}>Projects</h1></Link>
+                    </RevealComp>
                 </section>
                 <section className={"landing-tech-section"}>
                     <div className={"linear-gradient-2"}></div>
