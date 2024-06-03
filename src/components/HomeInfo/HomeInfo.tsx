@@ -25,7 +25,7 @@ function HomeInfo() {
                 has extended beyond coding to effective communication with various departments, to
                 define new features and spearheading the development of new applications.</p>
             <div className={"landing-info-buttons"}>
-                <Link target="_blank" rel="noopener noreferrer" to={"https://drive.google.com/file/d/1p2Pby0NyxchP92MQufJUtQ9qg0lC1JaF/view?usp=sharing"}>
+                <Link target="_blank" rel="noopener noreferrer" to={"https://veldin.dev/assets/Resume.pdf"}>
                     <button className={"cv-button"}>
                         Download CV
                     </button>

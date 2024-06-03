@@ -52,7 +52,7 @@ function Education() {
                             <span className='page-info-heading-span'> my education. </span>
                             {"/>"}
                         </h1>
-                        <Link target="_blank" rel="noopener noreferrer" to={"https://drive.google.com/file/d/1OlU5W8xeHP5l7vkOrF7WceqN-C5NcrdO/view?usp=sharing"}>
+                        <Link target="_blank" rel="noopener noreferrer" to={"https://veldin.dev/assets/Resume.pdf"}>
                             <button className={"cv-button"}>
                                 Download CV
                             </button>
