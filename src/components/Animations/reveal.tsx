@@ -34,7 +34,8 @@ const RevealComp = ({ children, threshold, duration, delay, x, y }) => {
             style={{
                 transitionDuration: duration,
                 transitionDelay: delay,
-                transform: !intersecting ? `translate(${x}px, ${y}px)` : "translate(0px, 0px)"
+                transform: !intersecting ? `translate(${x}px, ${y}px)` : "translate(0px, 0px)",
+                width: "100%"
             }}
             className={`transition ${intersecting ? "opacity-100" : "opacity-0"}`}
             ref={ref}

@@ -119,7 +119,7 @@ function Education() {
                                  cardName={"Next.js 14 & React"}
                                  cardField={"Udemy"}
                                  startDate={"2024"}
-                                 cardLink={"/Next&React"}
+                                 cardLink={"https://www.udemy.com/certificate/UC-dc3252bf-aeb7-4362-bfdb-9613cc9171bc/"}
                                  techImg1={nextLogo}
                                  techImg2={reactLogo}
                                  techImg3={githubLogo}
