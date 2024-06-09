@@ -7,6 +7,7 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getPerformance } from "firebase/performance";
 import Experience from "./pages/experience/Experience.tsx";
+import Projects from "./pages/projects/Projects.tsx";
 // TODO: Add SDKs for Firebase products that you want to use
 
 const firebaseConfig = {
@@ -35,6 +36,7 @@ function App() {
                 <Route path={'/'} element={<Home/>} />
                 <Route path={'/education'} element={<Education/>} />
                 <Route path={'/experience'} element={<Experience/>} />
+                <Route path={'/projects'} element={<Projects/>} />
             </Routes>
         </BrowserRouter>
     </>
