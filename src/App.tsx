@@ -3,16 +3,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home.tsx";
 import Education from "./pages/education/Education.tsx";
 
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getPerformance } from "firebase/performance";
 import Experience from "./pages/experience/Experience.tsx";
 // TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
     apiKey: "AIzaSyCVGX1wPo6vQhjDdaD5zkR33YoCt2T889s",
     authDomain: "portfolio-2205.firebaseapp.com",
