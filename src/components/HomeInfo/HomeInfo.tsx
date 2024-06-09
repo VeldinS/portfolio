@@ -32,7 +32,12 @@ function HomeInfo() {
                 </Link>
                 <Link to={'/experience'}>
                     <button className={"button-1"}>
-                        See experience
+                        Experience
+                    </button>
+                </Link>
+                <Link to={'/projects'}>
+                    <button className={"button-1"}>
+                        Projects
                     </button>
                 </Link>
             </div>

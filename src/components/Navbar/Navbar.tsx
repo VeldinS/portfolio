@@ -51,6 +51,9 @@ function Navbar() {
                     <Link className={`navlink ${location.pathname === '/experience' ? 'navlink-active' : ''}`}
                           to="/experience">experience
                     </Link>
+                    <Link className={`navlink ${location.pathname === '/projects' ? 'navlink-active' : ''}`}
+                          to="/projects">projects
+                    </Link>
                     <div className={"navbar-social-icons"}>
                         <a href={"https://github.com/VeldinS"} target="_blank">
                             <img className={"social-media-icon"} src={githubIcon} alt={"github icon"}/>
