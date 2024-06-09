@@ -1,12 +1,13 @@
 import './projects.css'
 import Navbar from "../../components/Navbar/Navbar.tsx";
 import {Link} from "react-router-dom";
+import Project from "../../components/Project/Project.tsx";
 
 function Projects() {
     return (
         <div className={'main-body'}>
             <Navbar />
-            <div className={'projects-wrapper'}>
+            <section className={'projects-wrapper'}>
                 <div className={"page-info-wrapper"}>
                     <h1 className={"page-info-heading"}>
                         {"< Here, you can see some of the "}
@@ -24,9 +25,9 @@ function Projects() {
                 </div>
 
                 <div className={'projects-list'}>
-
+                    <Project />
                 </div>
-            </div>
+            </section>
         </div>
     );
 }
