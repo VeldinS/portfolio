@@ -1,0 +1,69 @@
+.project-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 96px;
+}
+
+.project-heading-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.project-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:8px
+}
+
+.project-main-heading{
+    font-family: Raleway, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: white;
+    margin: 0;
+}
+
+.project-main-subheading{
+    font-family: Raleway, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: darkgray;
+    margin: 0;
+}
+
+.project-text{
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: darkgray;
+    margin: 0;
+}
+
+.project-content-wrapper{
+    padding: 0 6%;
+    position: relative;
+    width: 100%;
+    height: 60vh;
+}
+
+.project-background{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(141,77,253,0.1);
+    border-radius: 20px;
+    rotate: 4deg;
+}

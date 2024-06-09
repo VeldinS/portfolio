@@ -12,16 +12,16 @@ function Project({}) {
             </div>
             <div className={'project-content-wrapper'}>
                 <div className={'project-background'}>
-                    <div className={'project-desktop'}>
-                        <img />
-                        <div className={'project-desktop-info'}>
-                            <img className={'project-icon'} />
-                            <p className={'project-desktop-name'}>Project Name</p>
-                        </div>
+                </div>
+                <div className={'project-desktop'}>
+                    <img/>
+                    <div className={'project-desktop-info'}>
+                        <img className={'project-icon'}/>
+                        <p className={'project-desktop-name'}>Project Name</p>
                     </div>
-                    <div className={'project-mobile-image'}>
+                </div>
+                <div className={'project-mobile-image'}>
 
-                    </div>
                 </div>
             </div>
         </div>
