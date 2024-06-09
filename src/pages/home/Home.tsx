@@ -106,7 +106,7 @@ function Home() {
                         <Link to={'/experience'}><h1 className={"landing-link-2"}>Experience</h1></Link>
                     </RevealComp>
                     <RevealComp delay={'600ms'} threshold={0.5} duration={'300ms'} x={-30} y={0}>
-                        <Link to={'/experience'}><h1 className={"landing-link-3"}>Projects</h1></Link>
+                        <Link to={'/projects'}><h1 className={"landing-link-3"}>Projects</h1></Link>
                     </RevealComp>
                 </section>
                 <section className={"landing-tech-section"}>
