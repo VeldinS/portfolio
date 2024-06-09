@@ -1,29 +1,32 @@
 import './project.css';
+import {Link} from "react-router-dom";
 
-function Project({}) {
+interface ProjectProps {
+    alignment: string,
+    title: string,
+    subtitle: string,
+    description: string,
+    link: string,
+    image: any
+}
+
+function Project(ProjectProps: ProjectProps): JSX.Element {
     return (
-        <div className={'project-wrapper'}>
-            <div className={'project-heading-wrapper'}>
-                <div className={'project-heading'}>
-                    <h1 className={'project-main-heading'}>Project Name</h1>
-                    <h3 className={'project-main-subheading'}>Project Subtitle</h3>
+        <div className={`project-wrapper-${ProjectProps.alignment}`}>
+            <div className={`project-heading-wrapper-${ProjectProps.alignment}`}>
+                <div className={`project-heading-${ProjectProps.alignment}`}>
+                    <h1 className={'project-main-heading'}>{ProjectProps.title}</h1>
+                    <h3 className={'project-main-subheading'}>{ProjectProps.subtitle}</h3>
                 </div>
-                <p className={'project-text'}>Some project text.Some project text.Some project text.Some project text.</p>
+                <p className={`project-text-${ProjectProps.alignment}`}>{ProjectProps.description}</p>
+                <Link target="_blank" rel="noopener noreferrer" to={ProjectProps.link}>
+                    <button className={"cv-button"}>
+                        Check it out...
+                    </button>
+                </Link>
+                <div className={`linear-gradient-project-${ProjectProps.alignment}`}></div>
             </div>
-            <div className={'project-content-wrapper'}>
-                <div className={'project-background'}>
-                </div>
-                <div className={'project-desktop'}>
-                    <img/>
-                    <div className={'project-desktop-info'}>
-                        <img className={'project-icon'}/>
-                        <p className={'project-desktop-name'}>Project Name</p>
-                    </div>
-                </div>
-                <div className={'project-mobile-image'}>
-
-                </div>
-            </div>
+            <img className={'project-image'} src={ProjectProps.image} alt={'project image'} />
         </div>
     );
 }

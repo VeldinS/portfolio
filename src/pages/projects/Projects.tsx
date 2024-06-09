@@ -3,6 +3,10 @@ import Navbar from "../../components/Navbar/Navbar.tsx";
 import {Link} from "react-router-dom";
 import Project from "../../components/Project/Project.tsx";
 
+import project1Img from '../../assets/projects/Fetch-thumbnail.png';
+import project2Img from '../../assets/projects/synteq-thumbnail.png';
+
+
 function Projects() {
     return (
         <div className={'main-body'}>
@@ -25,7 +29,18 @@ function Projects() {
                 </div>
 
                 <div className={'projects-list'}>
-                    <Project />
+                    <Project title={'Fetch'} subtitle={'Custom E-commerce Platform'}
+                             description={'Independently designed, developed, and deployed a fully functional e-commerce platform using Next.js and Tailwind, demonstrating a strong grasp of the full product lifecycle.'}
+                             link={'https://e-commerce-app-git-main-veldins-projects-efa77aa2.vercel.app/'}
+                             alignment={'left'}
+                             image={project1Img}
+                    />
+                    <Project title={'Synteq'} subtitle={'Digital Agency Website'}
+                             description={'Contributed to the development of website for Synteq, highlighting their services in web development, SEO, and strategic marketing, while emphasizing their streamlined project process.'}
+                             link={'https://synteq.dev/'}
+                             alignment={'right'}
+                             image={project2Img}
+                    />
                 </div>
             </section>
         </div>
