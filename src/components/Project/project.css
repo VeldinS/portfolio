@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: start;
     gap: 32px;
+    padding-left: 6%;
 }
 
 .project-wrapper-right{
@@ -14,6 +15,7 @@
     align-items: center;
     justify-content: start;
     gap: 96px;
+    padding-right: 6%;
 }
 
 .project-heading-wrapper-left{
@@ -123,5 +125,101 @@
     filter: blur(50%);
     border-radius: 50%;
     z-index: 1;
+}
+
+.project-button{
+    padding: 16px 40px;
+    background-color: white;
+    border-radius: 32px;
+    color: #0C0C0D;
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    border: 1px transparent solid;
+    transition: 350ms;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+.project-button:hover{
+    background-color: #6e43da;
+    color: white;
+    border: 1px black solid;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .project-wrapper-left{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        padding: 0 6%;
+    }
+
+    .project-wrapper-right{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        padding: 0 6%;
+    }
+
+    .project-heading-wrapper-left{
+        align-items: center;
+        gap: 12px;
+    }
+
+    .project-heading-wrapper-right{
+        align-items: center;
+        gap: 12px;
+    }
+
+    .project-heading-left{
+        align-items: center;
+        gap: 4px;
+    }
+
+    .project-heading-right{
+        align-items: center;
+        gap: 4px;
+    }
+
+    .project-main-heading{
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .project-main-subheading{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .project-text-left{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .project-text-right{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .project-image{
+        width: 100%;
+        height: auto;
+    }
+
+    .project-button {
+        padding: 12px 20px;
+        border-radius: 24px;
+        font-size: 14px;
+    }
+
+    .project-image{
+        width: 120%;
+    }
 }
 

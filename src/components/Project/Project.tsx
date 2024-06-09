@@ -20,7 +20,7 @@ function Project(ProjectProps: ProjectProps): JSX.Element {
                 </div>
                 <p className={`project-text-${ProjectProps.alignment}`}>{ProjectProps.description}</p>
                 <Link target="_blank" rel="noopener noreferrer" to={ProjectProps.link}>
-                    <button className={"cv-button"}>
+                    <button className={"project-button"}>
                         Check it out...
                     </button>
                 </Link>

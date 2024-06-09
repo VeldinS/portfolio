@@ -102,6 +102,10 @@
 
     }
 
+    .navlink-active {
+        display: none;
+    }
+
     .navbar-social-icons{
         display: none;
     }

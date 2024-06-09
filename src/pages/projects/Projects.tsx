@@ -18,7 +18,7 @@ function Projects() {
             <section className={'projects-wrapper'}>
                 <div className={"page-info-wrapper"}>
                     <h1 className={"page-info-heading"}>
-                        {"< Here, you can see some of the "}
+                        {"< Here, you can see"}
                         <br/>
                         <span className='page-info-heading-span'> projects </span>
                         {"that highlight"}
