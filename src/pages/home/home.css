@@ -215,6 +215,7 @@ a{
     font-weight: 500;
     margin: 0;
     transition: 500ms;
+    text-align: center;
 }
 
 .landing-link-1:hover{
@@ -229,6 +230,7 @@ a{
     font-weight: 500;
     margin: 0;
     transition: 500ms;
+    text-align: center;
 }
 
 .landing-link-2:hover{
@@ -243,6 +245,7 @@ a{
     font-weight: 500;
     margin: 0;
     transition: 500ms;
+    text-align: center;
 }
 
 .landing-link-3:hover{
