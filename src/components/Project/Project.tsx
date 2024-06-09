@@ -15,23 +15,24 @@ function Project(ProjectProps: ProjectProps): JSX.Element {
     return (
         <div className={`project-wrapper-${ProjectProps.alignment}`}>
             <div className={`project-heading-wrapper-${ProjectProps.alignment}`}>
-                <RevealComp delay={'200ms'} threshold={0.2} duration={'300ms'} x={-30} y={0}>
-                    <div className={`project-heading-${ProjectProps.alignment}`}>
-                        <h1 className={'project-main-heading'}>{ProjectProps.title}</h1>
-                        <h3 className={'project-main-subheading'}>{ProjectProps.subtitle}</h3>
-                    </div>
-                </RevealComp>
-                <RevealComp delay={'600ms'} threshold={0.2} duration={'300ms'} x={-30} y={0}>
-                    <p className={`project-text-${ProjectProps.alignment}`}>{ProjectProps.description}</p>
-                </RevealComp>
+                <div className={`project-heading-wrapper-${ProjectProps.alignment}`}>
+                    <RevealComp delay={'200ms'} threshold={0.2} duration={'300ms'} x={-30} y={0}>
+                        <div className={`project-heading-${ProjectProps.alignment}`}>
+                            <h1 className={'project-main-heading'}>{ProjectProps.title}</h1>
+                            <h3 className={'project-main-subheading'}>{ProjectProps.subtitle}</h3>
+                        </div>
+                    </RevealComp>
+                    <RevealComp delay={'600ms'} threshold={0.2} duration={'300ms'} x={-30} y={0}>
+                        <p className={`project-text-${ProjectProps.alignment}`}>{ProjectProps.description}</p>
+                    </RevealComp>
                     <Link target="_blank" rel="noopener noreferrer" to={ProjectProps.link}>
                         <RevealComp delay={'800ms'} threshold={0.2} duration={'300ms'} x={-30} y={0}>
                             <button className={"project-button"}>
                                 Check it out...
                             </button>
                         </RevealComp>
-
                     </Link>
+                </div>
                 <div className={`linear-gradient-project-${ProjectProps.alignment}`}></div>
             </div>
 

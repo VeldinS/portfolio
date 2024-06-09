@@ -10,8 +10,17 @@ import project4Img from '../../assets/projects/sunray-dev-thumbnail.png';
 import project5Img from '../../assets/projects/optical-gallery-thumbnail.png';
 import project6Img from '../../assets/projects/sunray-media-thumbnail.png';
 import Footer from "../../components/Footer/Footer.tsx";
+import {useEffect} from "react";
 
 function Projects() {
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }, []);
+
     return (
         <div className={'main-body'}>
             <Navbar />
