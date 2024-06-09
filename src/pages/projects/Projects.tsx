@@ -5,7 +5,11 @@ import Project from "../../components/Project/Project.tsx";
 
 import project1Img from '../../assets/projects/Fetch-thumbnail.png';
 import project2Img from '../../assets/projects/synteq-thumbnail.png';
-
+import project3Img from '../../assets/projects/gema-thumbnail.png';
+import project4Img from '../../assets/projects/sunray-dev-thumbnail.png';
+import project5Img from '../../assets/projects/optical-gallery-thumbnail.png';
+import project6Img from '../../assets/projects/sunray-media-thumbnail.png';
+import Footer from "../../components/Footer/Footer.tsx";
 
 function Projects() {
     return (
@@ -41,8 +45,33 @@ function Projects() {
                              alignment={'right'}
                              image={project2Img}
                     />
+                    <Project title={'Gema'} subtitle={'Premium Clothing Web-shop'}
+                             description={'Collaborated on the development of Gema\'s online presence, enhancing the user experience through modern design and intuitive navigation to showcase their premium product offerings.'}
+                             link={'https://gema.ba/'}
+                             alignment={'left'}
+                             image={project3Img}
+                    />
+                    <Project title={'sunray dev'} subtitle={'Company Profile'}
+                             description={'As part of the Sunray team, contributed to the development of their solutions-focused website, emphasizing their expertise in creating startups, empowering founders, and building innovative media platforms.'}
+                             link={'https://www.sunray.dev/'}
+                             alignment={'right'}
+                             image={project4Img}
+                    />
+                    <Project title={'Optical Gallery'} subtitle={'E-commerce Eyewear Platform'}
+                             description={'Collaborated with Sunray\'s team to develop an intuitive and visually appealing e-commerce platform for Optical Gallery, focused on optimizing the user experience and purchase process.'}
+                             link={'https://www.opticalgallery.ba/'}
+                             alignment={'left'}
+                             image={project5Img}
+                    />
+                    <Project title={'sunray media'} subtitle={'Digital Media Agency Website'}
+                             description={'Collaborated with the Sunray team to design and implement a modern, engaging website that showcases Sunray Media\'s diverse services and brand identity.'}
+                             link={'https://sunray.media/'}
+                             alignment={'right'}
+                             image={project6Img}
+                    />
                 </div>
             </section>
+            <Footer />
         </div>
     );
 }
