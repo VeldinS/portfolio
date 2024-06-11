@@ -105,6 +105,66 @@
     height: auto;
 }
 
+.project-tech-wrapper-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.project-tech-wrapper-right{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: end;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.project-tech-1{
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    padding: 6px 10px;
+    color: #FF6347 ;
+    background-color: rgba(255, 99, 71, 0.3);
+    border-radius: 12px;
+    margin: 0;
+}
+
+.project-tech-2{
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    padding: 6px 10px;
+    color: #4682B4;
+    background-color: rgba(70, 130, 180, 0.3);
+    border-radius: 12px;
+    margin: 0;
+}
+
+
+.project-tech-3{
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    padding: 6px 10px;
+    color: #32CD32;
+    background-color: rgba(50, 205, 50, 0.3);
+    border-radius: 12px;
+    margin: 0;
+}
+
+
+.project-tech-4{
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    padding: 6px 10px;
+    color: #FFD700;
+    background-color: rgba(255, 215, 0, 0.3);
+    border-radius: 12px;
+    margin: 0;
+}
+
 .linear-gradient-project-left{
     position: absolute;
     left: -50%;
@@ -231,6 +291,66 @@
 
     .project-image{
         width: 120%;
+    }
+
+    .project-tech-wrapper-left{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .project-tech-wrapper-right{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .project-tech-1{
+        font-family: Raleway, sans-serif;
+        font-size: 14px;
+        padding: 4px 8px;
+        color: #FF6347 ;
+        background-color: rgba(255, 99, 71, 0.3);
+        border-radius: 12px;
+        margin: 0;
+    }
+
+    .project-tech-2{
+        font-family: Raleway, sans-serif;
+        font-size: 14px;
+        padding: 4px 8px;
+        color: #4682B4;
+        background-color: rgba(70, 130, 180, 0.3);
+        border-radius: 12px;
+        margin: 0;
+    }
+
+
+    .project-tech-3{
+        font-family: Raleway, sans-serif;
+        font-size: 14px;
+        padding: 4px 8px;
+        color: #32CD32;
+        background-color: rgba(50, 205, 50, 0.3);
+        border-radius: 12px;
+        margin: 0;
+    }
+
+
+    .project-tech-4{
+        font-family: Raleway, sans-serif;
+        font-size: 14px;
+        padding: 4px 8px;
+        color: #FFD700;
+        background-color: rgba(255, 215, 0, 0.3);
+        border-radius: 12px;
+        margin: 0;
     }
 }
 

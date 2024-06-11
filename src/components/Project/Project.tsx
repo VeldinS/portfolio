@@ -8,7 +8,11 @@ interface ProjectProps {
     subtitle: string,
     description: string,
     link: string,
-    image: any
+    image: any,
+    development: boolean,
+    design?: boolean,
+    seo?: boolean,
+    analytics?: boolean
 }
 
 function Project(ProjectProps: ProjectProps): JSX.Element {
@@ -25,8 +29,24 @@ function Project(ProjectProps: ProjectProps): JSX.Element {
                     <RevealComp delay={'600ms'} threshold={0.2} duration={'300ms'} x={-30} y={0}>
                         <p className={`project-text-${ProjectProps.alignment}`}>{ProjectProps.description}</p>
                     </RevealComp>
+                    <RevealComp delay={'800ms'} threshold={0.2} duration={'300ms'} x={-30} y={0}>
+                        <div className={`project-tech-wrapper-${ProjectProps.alignment}`}>
+                            {ProjectProps.design && (
+                                <p className={'project-tech-1'}>UI/UX Design</p>
+                            )}
+                            {ProjectProps.development && (
+                                <p className={'project-tech-2'}>Development</p>
+                            )}
+                            {ProjectProps.seo && (
+                                <p className={'project-tech-3'}>SEO</p>
+                            )}
+                            {ProjectProps.analytics && (
+                                <p className={'project-tech-4'}>Analytics</p>
+                            )}
+                        </div>
+                    </RevealComp>
                     <Link target="_blank" rel="noopener noreferrer" to={ProjectProps.link}>
-                        <RevealComp delay={'800ms'} threshold={0.2} duration={'300ms'} x={-30} y={0}>
+                        <RevealComp delay={'1000ms'} threshold={0.2} duration={'300ms'} x={-30} y={0}>
                             <button className={"project-button"}>
                                 Check it out...
                             </button>
