@@ -3,13 +3,13 @@ import Navbar from "../../components/Navbar/Navbar.tsx";
 import {Link} from "react-router-dom";
 import Project from "../../components/Project/Project.tsx";
 
-import project1Img from '../../assets/projects/Fetch-thumbnail.png';
-import project2Img from '../../assets/projects/synteq-thumbnail.png';
-import project3Img from '../../assets/projects/gema-thumbnail.png';
-import project4Img from '../../assets/projects/sunray-dev-thumbnail.png';
-import project5Img from '../../assets/projects/optical-gallery-thumbnail.png';
-import project6Img from '../../assets/projects/sunray-media-thumbnail.png';
-import project7Img from '../../assets/projects/constructit-thumbnail.png';
+import project1Img from '../../assets/projects/Fetch-thumbnail.webp';
+import project2Img from '../../assets/projects/synteq-thumbnail.webp';
+import project3Img from '../../assets/projects/gema-thumbnail.webp';
+import project4Img from '../../assets/projects/sunray-dev-thumbnail.webp';
+import project5Img from '../../assets/projects/optical-gallery-thumbnail.webp';
+import project6Img from '../../assets/projects/sunray-media-thumbnail.webp';
+import project7Img from '../../assets/projects/constructit-thumbnail.webp';
 
 import Footer from "../../components/Footer/Footer.tsx";
 import {useEffect} from "react";
