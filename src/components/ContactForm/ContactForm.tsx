@@ -73,32 +73,50 @@ function ContactForm() {
         <div className={"form-wrapper"}>
             <h1 className={"form-heading"}>Let's start from here</h1>
             <div className="form-container">
-                <form id="email-form" name="email-form" data-name="Email Form" method="get" className={"form"}
-                      onSubmit={handleFormSubmit}>
-                    <input onChange={handleNameChange} className={"form-input"} placeholder={'Name'} name={"name"}
-                           id={"name"} value={name}/>
-                    <input onChange={handleEmailChange} className={"form-input"} placeholder={'Email'} name={"email"}
-                           id={"email"} value={email}/>
-                    <textarea onChange={handleMessageChange} className={"form-textarea"} placeholder={'Message'}
-                              name={"message"} id={"message"} value={message}/>
-
-                    <button className={"form-button"} type={"submit"}>
-                        <p>Send!</p>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-6 w-6"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            strokeWidth="4"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                d="M14 5l7 7m0 0l-7 7m7-7H3"
-                            ></path>
-                        </svg>
-                    </button>
+                <form onSubmit={handleFormSubmit} id={'email-form'} name={'email-form'} data-name="Email Form" method="get" className="editor">
+                    <div className="line">
+                        <span className="line-number">1</span>
+                        <span className="code clr-1">function </span>
+                        <span className="code clr-2"> submitForm</span>
+                        <span className="code">(</span>
+                        <span className="code clr-3">name:</span>
+                        <span className="code clr-4">string,</span>
+                        <span className="code clr-3">email:</span>
+                        <span className="code clr-4">string,</span>
+                        <span className="code clr-3">message:</span>
+                        <span className="code clr-4">string</span>
+                        <span className="code">)</span>
+                        {'{'}
+                    </div>
+                    <div className="line"><span className="line-number">2</span><span
+                        className="code ind">    const name = <input name={'name'} id={'name'} type="text" value={name}
+                                                                     onChange={handleNameChange}
+                                                                     placeholder="enter your name here"/>;</span></div>
+                    <div className="line"><span className="line-number">3</span><span
+                        className="code ind">    const email = <input name={'email'} id={'email'} type="email" value={email}
+                                                                      onChange={handleEmailChange}
+                                                                      placeholder="enter your email here"/>;</span>
+                    </div>
+                    <div className="line"><span className="line-number">4</span><span className="code ind">    const message = <input
+                        name={'message'} id={'message'} value={message} onChange={handleMessageChange}
+                        placeholder="enter your message here"></input>;</span></div>
+                    <div className="line"><span className="line-number">5</span>
+                    </div>
+                    <div className="line"><span className="line-number">6</span><span className="code ind">    //Handle form submit</span>
+                    </div>
+                    <div className="line">
+                        <span className="line-number">7</span>
+                        <span className="code clr-1 ind">await</span>
+                        <span className="code clr-2"> sendDataToService</span>
+                        <span className="code">(</span>
+                        <span className="code clr-3">name,</span>
+                        <span className="code clr-3">email,</span>
+                        <span className="code clr-3">message</span>
+                        <span className="code">)</span>
+                    </div>
+                    <div className="line"><span className="line-number">8</span><span className="code">{'}'}</span>
+                    </div>
+                    <button type={'submit'} >Submit</button>
                 </form>
             </div>
             {showSuccessModal &&
