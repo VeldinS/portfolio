@@ -6,6 +6,8 @@ import '../education/education.css'
 import {Link} from "react-router-dom";
 import Typewriter from "typewriter-effect";
 
+import {motion} from "framer-motion";
+
 import Navbar from "../../components/Navbar/Navbar.tsx";
 import ExpCard from "../../components/ExperienceCard/ExpCard.tsx";
 import Footer from "../../components/Footer/Footer.tsx";
@@ -21,7 +23,12 @@ function Experience() {
     }, []);
 
     return (
-        <div  className={"main-body"}>
+        <motion.div
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            exit={{opacity: 0}}
+            transition={{duration: 1.3}}
+            className={"main-body"}>
             <Navbar />
             <div className={"experience-cards-wrapper"}>
                 <div className={"page-info-wrapper"}>
@@ -88,7 +95,7 @@ function Experience() {
                 </div>
             </div>
             <Footer />
-        </div>
+        </motion.div>
     );
 }
 

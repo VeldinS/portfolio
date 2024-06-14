@@ -3,6 +3,8 @@ import Navbar from "../../components/Navbar/Navbar.tsx";
 import {Link} from "react-router-dom";
 import Project from "../../components/Project/Project.tsx";
 
+import {motion} from "framer-motion";
+
 import project1Img from '../../assets/projects/Fetch-thumbnail.webp';
 import project2Img from '../../assets/projects/synteq-thumbnail.webp';
 import project3Img from '../../assets/projects/gema-thumbnail.webp';
@@ -24,7 +26,12 @@ function Projects() {
     }, []);
 
     return (
-        <div className={'main-body'}>
+        <motion.div
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            exit={{opacity: 0}}
+            transition={{duration: 1.3}}
+            className={'main-body'}>
             <Navbar />
             <section className={'projects-wrapper'}>
                 <div className={"page-info-wrapper"}>
@@ -113,7 +120,7 @@ function Projects() {
                 </div>
             </section>
             <Footer />
-        </div>
+        </motion.div>
     );
 }
 
