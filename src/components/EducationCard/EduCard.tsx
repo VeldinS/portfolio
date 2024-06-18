@@ -22,48 +22,51 @@ interface eduCard{
 function EduCard(props:eduCard) {
     return (
         <RevealComp delay={'200ms'} threshold={0.5} duration={'1000ms'} x={-30} y={0}>
-            <div className={"edu-card"}>
-                <div className={"education-info-wrapper"}>
-                    <div className={"education-image-wrapper"}>
-                        <img className={"education-image"} src={props.cardImg} alt={props.cardName}/>
-                    </div>
-                    <div className={"education-info"}>
-                        <h1 className={"education-heading"}>{props.cardName}</h1>
-                        <p className={"education-field"}>{props.cardField}</p>
-                        <div className={"education-date-wrapper"}>
-                            <p className={"education-date"}>{props.startDate}</p>
-                            {props.endDate && (
-                                <div className={"circle"}></div>
-                            )}
-                            {props.endDate && (
-                                <p className={"education-date"}>{props.endDate}</p>
-                            )}
+            <div className={'edu-card-wrapper'}>
+                <div className={"edu-card"}>
+                    <div className={"education-info-wrapper"}>
+                        <div className={"education-image-wrapper"}>
+                            <img className={"education-image"} src={props.cardImg} alt={props.cardName}/>
                         </div>
-                        <div className={"edu-tech-wrapper"}>
-                            {props.techImg1 && (
-                                <img className={"edu-tech-img"} src={props.techImg1} alt={props.cardName}/>
-                            )}
-                            {props.techImg2 && (
-                                <img className={"edu-tech-img"} src={props.techImg2} alt={props.cardName}/>
-                            )}
-                            {props.techImg3 && (
-                                <img className={"edu-tech-img"} src={props.techImg3} alt={props.cardName}/>
-                            )}
-                            {props.techImg4 && (
-                                <img className={"edu-tech-img"} src={props.techImg4} alt={props.cardName}/>
-                            )}
-                            {props.techImg5 && (
-                                <img className={"edu-tech-img"} src={props.techImg5} alt={props.cardName}/>
-                            )}
-                            {props.techImg6 && (
-                                <img className={"edu-tech-img"} src={props.techImg6} alt={props.cardName}/>
-                            )}
+                        <div className={"education-info"}>
+                            <h1 className={"education-heading"}>{props.cardName}</h1>
+                            <p className={"education-field"}>{props.cardField}</p>
+                            <div className={"education-date-wrapper"}>
+                                <p className={"education-date"}>{props.startDate}</p>
+                                {props.endDate && (
+                                    <div className={"circle"}></div>
+                                )}
+                                {props.endDate && (
+                                    <p className={"education-date"}>{props.endDate}</p>
+                                )}
+                            </div>
+                            <div className={"edu-tech-wrapper"}>
+                                {props.techImg1 && (
+                                    <img className={"edu-tech-img"} src={props.techImg1} alt={props.cardName}/>
+                                )}
+                                {props.techImg2 && (
+                                    <img className={"edu-tech-img"} src={props.techImg2} alt={props.cardName}/>
+                                )}
+                                {props.techImg3 && (
+                                    <img className={"edu-tech-img"} src={props.techImg3} alt={props.cardName}/>
+                                )}
+                                {props.techImg4 && (
+                                    <img className={"edu-tech-img"} src={props.techImg4} alt={props.cardName}/>
+                                )}
+                                {props.techImg5 && (
+                                    <img className={"edu-tech-img"} src={props.techImg5} alt={props.cardName}/>
+                                )}
+                                {props.techImg6 && (
+                                    <img className={"edu-tech-img"} src={props.techImg6} alt={props.cardName}/>
+                                )}
+                            </div>
                         </div>
                     </div>
+                    {props.cardLink && (
+                        <Link to={props.cardLink} className={"certificate-link"} target="_blank"
+                              rel="noopener noreferrer">View Certificate</Link>
+                    )}
                 </div>
-                {props.cardLink && (
-                    <Link to={props.cardLink} className={"certificate-link"} target="_blank" rel="noopener noreferrer">View Certificate</Link>
-                )}
             </div>
         </RevealComp>
     );

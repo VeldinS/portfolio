@@ -1,3 +1,10 @@
+.edu-card-wrapper{
+    width: 100%;
+    background: radial-gradient(circle closest-corner, #02c6c3, #006bff 33%, rgba(0, 107, 255, 0));
+    padding: 1px;
+    border-radius: 64px;
+}
+
 .edu-card{
     width: 100%;
     display: flex;
@@ -5,8 +12,8 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 64px;
-    border: 1px solid #272727;
     padding: 64px;
+    background-color: #0C0C0D;
 }
 
 .education-info-wrapper{
