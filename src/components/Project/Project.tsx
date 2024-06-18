@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import RevealComp from "../Animations/reveal.tsx";
 
 interface ProjectProps {
+    id: string,
     alignment: string,
     title: string,
     subtitle: string,
