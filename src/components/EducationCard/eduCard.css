@@ -54,7 +54,7 @@
     font-weight: 600;
     line-height: 100%;
     margin: 0;
-    text-align: center;
+    text-align: start;
 }
 
 .education-field{
@@ -153,6 +153,7 @@
     }
 
     .education-heading{
+        text-align: center;
         font-size: 22px;
     }
 

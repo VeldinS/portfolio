@@ -54,6 +54,18 @@ function Experience() {
                         }}
                     /></h1>
 
+                    <ExpCard cardName={"Developer & Project Manager"}
+                             cardEmploymentType={"Full-time"}
+                             startDate={"May, 2024"}
+                             endDate={"Present"}
+                             location={"Sarajevo"}
+                             company={"Construct.IT"}
+                             paragraph1={"At Construct.It in Sarajevo, I'm a full-stack developer and project manager, building innovative web applications from start to finish."}
+                             paragraph2={"I specialize in scalable, high-performing solutions, ensuring timely project delivery and exceeding client expectations."}
+                    />
+
+
+
                     <ExpCard cardName={"Full-stack Developer"}
                              cardEmploymentType={"Full-time"}
                              startDate={"Aug, 2023"}
