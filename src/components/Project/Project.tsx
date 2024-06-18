@@ -3,7 +3,6 @@ import {Link} from "react-router-dom";
 import RevealComp from "../Animations/reveal.tsx";
 
 interface ProjectProps {
-    id: string,
     alignment: string,
     title: string,
     subtitle: string,
@@ -46,7 +45,7 @@ function Project(ProjectProps: ProjectProps): JSX.Element {
                             )}
                         </div>
                     </RevealComp>
-                    <Link target="_blank" rel="noopener noreferrer" to={`/projects/${ProjectProps.id}`}>
+                    <Link target="_blank" rel="noopener noreferrer" to={ProjectProps.link}>
                         <RevealComp delay={'1000ms'} threshold={0.2} duration={'300ms'} x={-30} y={0}>
                             <button className={"project-button"}>
                                 View Details

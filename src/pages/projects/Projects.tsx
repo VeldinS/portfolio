@@ -51,7 +51,7 @@ function Projects() {
                 </div>
 
                 <div className={'projects-list'}>
-                    <Project id={'fetch'} title={'Fetch'} subtitle={'Custom E-commerce Platform'}
+                    <Project title={'Fetch'} subtitle={'Custom E-commerce Platform'}
                              description={'Independently designed, developed, and deployed a fully functional e-commerce platform using Next.js and Tailwind, demonstrating a strong grasp of the full product lifecycle.'}
                              link={'https://e-commerce-app-git-main-veldins-projects-efa77aa2.vercel.app/'}
                              alignment={'left'}
@@ -61,7 +61,7 @@ function Projects() {
                              seo={true}
                              analytics={true}
                     />
-                    <Project id={'synteq'} title={'Synteq'} subtitle={'Digital Agency Website'}
+                    <Project title={'Synteq'} subtitle={'Digital Agency Website'}
                              description={'Contributed to the development of website for Synteq, highlighting their services in web development, SEO, and strategic marketing, while emphasizing their streamlined project process.'}
                              link={'https://synteq.dev/'}
                              alignment={'right'}
@@ -71,7 +71,7 @@ function Projects() {
                              seo={true}
                              analytics={true}
                     />
-                    <Project id={'constructIt'} title={'Construct.IT'} subtitle={'Digital Agency Website'}
+                    <Project title={'Construct.IT'} subtitle={'Digital Agency Website'}
                              description={'Leading development efforts for Construct.IT\'s online presence, showcasing their expertise in crafting custom web solutions and digital experiences.'}
                              link={'https://construct-it.vercel.app/'}
                              alignment={'left'}
@@ -81,7 +81,7 @@ function Projects() {
                              seo={true}
                              analytics={true}
                     />
-                    <Project id={'gema'} title={'Gema'} subtitle={'Premium Clothing Web-shop'}
+                    <Project title={'Gema'} subtitle={'Premium Clothing Web-shop'}
                              description={'Collaborated on the development of Gema\'s online presence, enhancing the user experience through modern design and intuitive navigation to showcase their premium product offerings.'}
                              link={'https://gema.ba/'}
                              alignment={'right'}
@@ -90,7 +90,7 @@ function Projects() {
                              seo={true}
                              analytics={true}
                     />
-                    <Project id={'sunray-dev'} title={'sunray dev'} subtitle={'Company Profile'}
+                    <Project title={'sunray dev'} subtitle={'Company Profile'}
                              description={'As part of the Sunray team, contributed to the development of their solutions-focused website, emphasizing their expertise in creating startups, empowering founders, and building innovative media platforms.'}
                              link={'https://www.sunray.dev/'}
                              alignment={'left'}
@@ -99,7 +99,7 @@ function Projects() {
                              seo={true}
                              analytics={true}
                     />
-                    <Project id={'sunray-media'} title={'sunray media'} subtitle={'Digital Media Agency Website'}
+                    <Project title={'sunray media'} subtitle={'Digital Media Agency Website'}
                              description={'Collaborated with the Sunray team to design and implement a modern, engaging website that showcases Sunray Media\'s diverse services and brand identity.'}
                              link={'https://sunray.media/'}
                              alignment={'right'}
@@ -108,7 +108,7 @@ function Projects() {
                              seo={true}
                              analytics={true}
                     />
-                    <Project id={'optical-gallery'} title={'Optical Gallery'} subtitle={'E-commerce Eyewear Platform'}
+                    <Project title={'Optical Gallery'} subtitle={'E-commerce Eyewear Platform'}
                              description={'Collaborated with Sunray\'s team to develop an intuitive and visually appealing e-commerce platform for Optical Gallery, focused on optimizing the user experience and purchase process.'}
                              link={'https://www.opticalgallery.ba/'}
                              alignment={'left'}
