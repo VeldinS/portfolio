@@ -13,7 +13,7 @@ interface ProjectProps {
     development: boolean,
     design?: boolean,
     seo?: boolean,
-    analytics?: boolean
+    analytics?: boolean,
 }
 
 function Project(ProjectProps: ProjectProps): JSX.Element {
@@ -46,10 +46,10 @@ function Project(ProjectProps: ProjectProps): JSX.Element {
                             )}
                         </div>
                     </RevealComp>
-                    <Link target="_blank" rel="noopener noreferrer" to={ProjectProps.link}>
+                    <Link target="_blank" rel="noopener noreferrer" to={`/projects/${ProjectProps.id}`}>
                         <RevealComp delay={'1000ms'} threshold={0.2} duration={'300ms'} x={-30} y={0}>
                             <button className={"project-button"}>
-                                Check it out...
+                                View Details
                             </button>
                         </RevealComp>
                     </Link>
