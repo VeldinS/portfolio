@@ -21,7 +21,7 @@ interface eduCard{
 
 function EduCard(props:eduCard) {
     return (
-        <RevealComp delay={'200ms'} threshold={0.5} duration={'300ms'} x={-30} y={0}>
+        <RevealComp delay={'200ms'} threshold={0.5} duration={'1000ms'} x={-30} y={0}>
             <div className={"edu-card"}>
                 <div className={"education-info-wrapper"}>
                     <div className={"education-image-wrapper"}>

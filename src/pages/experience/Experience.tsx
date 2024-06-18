@@ -11,6 +11,7 @@ import {motion} from "framer-motion";
 import Navbar from "../../components/Navbar/Navbar.tsx";
 import ExpCard from "../../components/ExperienceCard/ExpCard.tsx";
 import Footer from "../../components/Footer/Footer.tsx";
+import LinearLine from "../../components/LinearLine/LinearLine.tsx";
 
 
 function Experience() {
@@ -64,7 +65,7 @@ function Experience() {
                              paragraph2={"I specialize in scalable, high-performing solutions, ensuring timely project delivery and exceeding client expectations."}
                     />
 
-
+                    <LinearLine />
 
                     <ExpCard cardName={"Full-stack Developer"}
                              cardEmploymentType={"Full-time"}
@@ -76,6 +77,8 @@ function Experience() {
                              paragraph2={"Specializing in e-commerce websites, I ensured seamless user experiences and robust functionalities, contributing to projects from inception to execution over 9 months."}
                     />
 
+                    <LinearLine />
+
                     <ExpCard cardName={"Front-end Developer"}
                              cardEmploymentType={"Contractor"}
                              startDate={"Feb, 2023"}
@@ -86,6 +89,9 @@ function Experience() {
                              paragraph2={"Embracing Agile methodologies, I collaborated closely with clients, delivering responsive designs and ensuring consistent website performance across multiple platforms over 5 months."}
 
                     />
+
+                    <LinearLine />
+
                     <ExpCard cardName={"Software Engineer"}
                              cardEmploymentType={"Internship"}
                              startDate={"Oct, 2022"}
@@ -95,6 +101,9 @@ function Experience() {
                              paragraph1={"In the role of Software Engineer - Database Management in Sarajevo, I acquired fundamental knowledge of database management principles."}
                              paragraph2={"Witnessed firsthand the importance of secure database practices in real-world applications, laying a foundational understanding within a dynamic environment over 3 months."}
                     />
+
+                    <LinearLine />
+
                     <ExpCard cardName={"Full-stack Engineer"}
                              cardEmploymentType={"Full-time"}
                              startDate={"Apr, 2022"}

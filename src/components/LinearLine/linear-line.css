@@ -1,0 +1,5 @@
+.linear-line{
+    width: 100%;
+    height: 2px;
+    background: radial-gradient(circle closest-corner, #02c6c3, #006bff 33%, rgba(0, 107, 255, 0));
+}
