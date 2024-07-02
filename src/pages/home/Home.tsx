@@ -61,8 +61,8 @@ function Home() {
                 </section>
                 <section className={"landing-experience-section"}>
                     <div className={"landing-experience-info"}>
-                        <p className={"experience-text-1"}>2 years of</p>
-                        <h1 className={"experience-heading-1"}>XP</h1>
+                        <p className={"experience-text-1"}>Over 2 years of</p>
+                        <h1 className={"experience-heading-1"}>experience</h1>
                         <p className={"experience-text-2"}>with the most popular fullstack ecosystem</p>
                         <div className={"linear-gradient-1"} ></div>
                     </div>
