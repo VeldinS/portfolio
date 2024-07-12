@@ -12,6 +12,7 @@ import project4Img from '../../assets/projects/sunray-dev-thumbnail.webp';
 import project5Img from '../../assets/projects/optical-gallery-thumbnail.webp';
 import project6Img from '../../assets/projects/sunray-media-thumbnail.webp';
 import project7Img from '../../assets/projects/constructit-thumbnail.webp';
+import project8Img from '../../assets/projects/drivezone-thumbnail.webp';
 
 import Footer from "../../components/Footer/Footer.tsx";
 import {useEffect} from "react";
@@ -52,6 +53,18 @@ function Projects() {
                 </div>
 
                 <div className={'projects-list'}>
+
+                    <Project title={'Drivezone'} subtitle={'Car Dealership Platform'}
+                             description={'Independently building a full-stack online car dealership webshop (planning, UI/UX design, development, testing, deployment) using Next.js and TailwindCSS. This project demonstrates my full-stack capabilities and ability to deliver complex projects on time and within budget.'}
+                             link={'https://drive-zone.vercel.app/'}
+                             alignment={'right'}
+                             image={project8Img}
+                             development={true}
+                             design={true}
+                             seo={true}
+                             analytics={true}
+                    />
+
                     <Project title={'Fetch'} subtitle={'Custom E-commerce Platform'}
                              description={'Independently designed, developed, and deployed a fully functional e-commerce platform using Next.js and Tailwind, demonstrating a strong grasp of the full product lifecycle.'}
                              link={'https://e-commerce-app-git-main-veldins-projects-efa77aa2.vercel.app/'}
