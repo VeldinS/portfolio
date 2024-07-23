@@ -1,11 +1,8 @@
 import './contactForm.css'
-
-import {SetStateAction, useState} from "react";
+import { SetStateAction, useState } from "react";
 import Modal from "../Modal/Modal.tsx";
 
-
 function ContactForm() {
-
     async function sendDataToEmailService(formData: { name: string; email: string; message: string; }) {
         console.log("Form data:", formData);
         // @ts-ignore
@@ -21,21 +18,53 @@ function ContactForm() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [showSuccessModal, setShowSuccessModal] = useState(false);
+    const [errors, setErrors] = useState({ name: '', email: '', message: '' });
 
     const handleNameChange = (event: { target: { value: SetStateAction<string>; }; }) => {
         setName(event.target.value);
+        if (event.target.value) {
+            setErrors((prevErrors) => ({ ...prevErrors, name: '' }));
+        }
     };
 
     const handleEmailChange = (event: { target: { value: SetStateAction<string>; }; }) => {
         setEmail(event.target.value);
+        if (event.target.value) {
+            setErrors((prevErrors) => ({ ...prevErrors, email: '' }));
+        }
     };
 
     const handleMessageChange = (event: { target: { value: SetStateAction<string>; }; }) => {
         setMessage(event.target.value);
+        if (event.target.value) {
+            setErrors((prevErrors) => ({ ...prevErrors, message: '' }));
+        }
     };
 
     async function handleFormSubmit(event: any) {
         event.preventDefault();
+
+        let formErrors = { name: '', email: '', message: '' };
+        let hasError = false;
+
+        if (!name) {
+            formErrors.name = 'Name is required';
+            hasError = true;
+        }
+        if (!email) {
+            formErrors.email = 'Email is required';
+            hasError = true;
+        }
+        if (!message) {
+            formErrors.message = 'Message is required';
+            hasError = true;
+        }
+
+        setErrors(formErrors);
+
+        if (hasError) {
+            return;
+        }
 
         const formData = {
             name: name,
@@ -65,9 +94,7 @@ function ContactForm() {
         setTimeout(() => {
             setShowSuccessModal(false);
         }, 300);
-
     };
-
 
     return (
         <div className={"form-wrapper"}>
@@ -92,14 +119,17 @@ function ContactForm() {
                         className="code ind">    const name = <input name={'name'} id={'name'} type="text" value={name}
                                                                      onChange={handleNameChange}
                                                                      placeholder="enter your name here"/>;</span></div>
+                    {errors.name && <div className="error">{errors.name}</div>}
                     <div className="line"><span className="line-number">3</span><span
                         className="code ind">    const email = <input name={'email'} id={'email'} type="email" value={email}
                                                                       onChange={handleEmailChange}
                                                                       placeholder="enter your email here"/>;</span>
                     </div>
+                    {errors.email && <div className="error">{errors.email}</div>}
                     <div className="line"><span className="line-number">4</span><span className="code ind">    const message = <input
                         name={'message'} id={'message'} value={message} onChange={handleMessageChange}
                         placeholder="enter your message here"></input>;</span></div>
+                    {errors.message && <div className="error">{errors.message}</div>}
                     <div className="line"><span className="line-number">5</span>
                     </div>
                     <div className="line"><span className="line-number">6</span><span className="code ind">    //Handle form submit</span>
@@ -116,15 +146,14 @@ function ContactForm() {
                     </div>
                     <div className="line"><span className="line-number">8</span><span className="code">{'}'}</span>
                     </div>
-                    <button type={'submit'} >Submit</button>
+                    <button type={'submit'}>Submit</button>
                 </form>
             </div>
             {showSuccessModal &&
-                <Modal onClose={handleCloseModal}/>
+                <Modal onClose={handleCloseModal} />
             }
         </div>
     );
 }
-
 
 export default ContactForm;
