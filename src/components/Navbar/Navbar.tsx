@@ -61,7 +61,7 @@ function Navbar() {
                         <a href={"https://www.linkedin.com/in/veldin-sal%C4%8Dinovi%C4%87-534294249/"} target="_blank">
                             <img className={"social-media-icon"} src={linkedinIcon} alt={"linkedin icon"}/>
                         </a>
-                        <a href={"mailto: veldinsalcinovic123@gmail.com"}>
+                        <a href={"mailto: contact@veldin.dev"}>
                             <img className={"social-media-icon"} src={mailIcon} alt={"email icon"}/>
                         </a>
                     </div>
